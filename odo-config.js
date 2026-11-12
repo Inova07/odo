@@ -27,5 +27,5 @@ window.ODO_CONFIG = {
   BUSINESS_NAME: "",         // legal name, e.g. "Rickie Smith trading as Odo" or "Odo Apps Pty Ltd"
   ABN: "",                   // e.g. "12 345 678 901"
   BUSINESS_STATE: "NSW",     // state/territory you operate from
-  PRIVACY_UPDATED: "9 November 2026",
+  PRIVACY_UPDATED: "12 November 2026",
 };
