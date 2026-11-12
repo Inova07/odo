@@ -1,5 +1,5 @@
 // Network-first: always try for the latest version, fall back to cache when offline.
-const CACHE = "odo-v3";
+const CACHE = "odo-v4";
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (e) => e.waitUntil(self.clients.claim()));
 self.addEventListener("fetch", (e) => {
