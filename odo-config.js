@@ -6,8 +6,8 @@
 // ============================================================
 window.ODO_CONFIG = {
   // Supabase → Project Settings → API
-  SUPABASE_URL: "",          // e.g. "https://abcdxyz.supabase.co"
-  SUPABASE_ANON_KEY: "",     // the "anon / public" key (safe to publish)
+  SUPABASE_URL: "https://hegcotgcyhpbqidiznxo.supabase.co",          // e.g. "https://abcdxyz.supabase.co"
+  SUPABASE_ANON_KEY: "sb_publishable_Jd1uL9neHjRde3ngbTlL_A_yFzfMkiX",     // the "anon / public" key (safe to publish)
 
   // Stripe → Payment Links (set "After payment" to redirect to your app URL + ?checkout=success)
   STRIPE_MONTHLY_LINK: "",   // e.g. "https://buy.stripe.com/abc123"
