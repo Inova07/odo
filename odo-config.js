@@ -24,8 +24,8 @@ window.ODO_CONFIG = {
   SUPPORT_EMAIL: "",         // e.g. "support@odoapp.com.au"
 
   // Shown on the Privacy Policy page (privacy.html)
-  BUSINESS_NAME: "",         // legal name, e.g. "Rickie Smith trading as Odo" or "Odo Apps Pty Ltd"
-  ABN: "",                   // e.g. "12 345 678 901"
+  BUSINESS_NAME: "Odo Pty Ltd",         // legal name, e.g. "Rickie Smith trading as Odo" or "Odo Apps Pty Ltd"
+  ABN: "1111 1111 1111",                   // e.g. "12 345 678 901"
   BUSINESS_STATE: "NSW",     // state/territory you operate from
   PRIVACY_UPDATED: "12 November 2026",
 };
