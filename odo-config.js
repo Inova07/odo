@@ -14,7 +14,7 @@ window.ODO_CONFIG = {
   STRIPE_YEARLY_LINK: "https://buy.stripe.com/test_28E9ATaD40uk7Hy2uQ8IU01",
   // Stripe → Settings → Billing → Customer portal → "Login link"
   STRIPE_PORTAL_LINK: "https://billing.stripe.com/p/login/test_9B6dR926yelaaTKb1m8IU00",
-  STRIPE_TAXPACK_LINK: "",
+  STRIPE_TAXPACK_LINK: "https://buy.stripe.com/test_14A7sL7qS2Csge41qM8IU02",
   
   // Shown on the paywall
   PRICE_MONTHLY: "A$4.99",
