@@ -80,7 +80,7 @@ footer{color:var(--soft);font-size:13px;text-align:center;margin-top:24px}
 
 <div class="card">
   <h2 id="about">1. About these terms</h2>
-  <p>These terms apply when you use Odo, the shift, kilometre and expense tracker for delivery and rideshare drivers ("<b>Odo</b>"). Odo is provided by <span data-cfg="BUSINESS_NAME"></span> (ABN <span data-cfg="ABN"></span>) ("<b>we</b>", "<b>us</b>").</p>
+  <p>These terms apply when you use Odo, the shift, kilometre and expense tracker for delivery and rideshare drivers ("<b>Odo</b>"). Odo is provided by <span data-cfg="BUSINESS_NAME"></span><span data-optional="ABN"> (ABN <span data-cfg="ABN"></span>)</span> ("<b>we</b>", "<b>us</b>").</p>
   <p>By using Odo or creating an account, you agree to these terms and our <a href="privacy.html">Privacy Policy</a>. If you don't agree, please don't use Odo.</p>
 </div>
 
@@ -179,7 +179,10 @@ footer{color:var(--soft);font-size:13px;text-align:center;margin-top:24px}
 <footer><a href="./">Odo</a> · <a href="guide.html">User guide</a> · <a href="terms.html">Terms of use</a> · <a href="privacy.html">Privacy policy</a></footer>
 </div>
 <script>
-(function(){var c=window.ODO_CONFIG||{},L={BUSINESS_NAME:"[your business name]",ABN:"[your ABN]",SUPPORT_EMAIL:"[your support email]",BUSINESS_STATE:"[state]",PRIVACY_UPDATED:"[date]"};
+(function(){var c=window.ODO_CONFIG||{};
+/* optional bits (like the ABN) simply disappear when not filled in */
+document.querySelectorAll("[data-optional]").forEach(function(el){if(!c[el.getAttribute("data-optional")])el.remove();});
+var L={BUSINESS_NAME:"[your business name]",ABN:"[your ABN]",SUPPORT_EMAIL:"[your support email]",BUSINESS_STATE:"[state]",PRIVACY_UPDATED:"[date]"};
 document.querySelectorAll("[data-cfg]").forEach(function(el){var k=el.getAttribute("data-cfg"),v=c[k];
 if(!v){el.textContent=L[k]||"["+k+"]";el.className="missing";return;}
 if(el.hasAttribute("data-mailto")){var a=document.createElement("a");a.href="mailto:"+v;a.textContent=v;el.replaceWith(a);}else el.textContent=v;});})();
