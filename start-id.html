@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Mulai di sini · Odo</title>
+<meta name="description" content="Baru pakai Odo? Siapkan dalam 5 menit: buka tautan, tambahkan ke layar utama, buat akun gratis, dan catat shift pertamamu." />
+<meta name="theme-color" content="#141A2E" />
+<link rel="icon" type="image/png" href="favicon-32.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<script src="odo-config.js"></script>
+<style>:root{--bg:#0B0D10;--surface:#14171C;--ink:#F3F4F6;--soft:#9BA3AF;--line:#252A31;--amber:#C6F432;--amberSoft:rgba(198,244,50,.14);--goSoft:rgba(45,212,191,.14);--grad:linear-gradient(135deg,#C6F432,#2DD4BF);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Arimo,Arial,Helvetica,"Noto Sans Devanagari","PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.logo{font-weight:800;font-size:26px;letter-spacing:-.5px;color:var(--ink);text-decoration:none;display:inline-flex;align-items:baseline;gap:2px}
+.logo i{width:16px;height:16px;border-radius:4px;background:var(--grad);display:inline-block;position:relative;top:1px;margin-left:1px}
+.btn{background:var(--grad);color:#0B0D10;text-decoration:none;font-weight:800;font-size:14px;padding:10px 14px;border-radius:6px;white-space:nowrap}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px;letter-spacing:-.5px}
+.sub{color:var(--soft);margin:0 0 20px;font-size:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px 22px;margin-bottom:12px}
+h2{font-size:19px;margin:0 0 10px;scroll-margin-top:16px}
+h3{font-size:15.5px;margin:16px 0 6px}
+p,li{font-size:15px}
+p{margin:0 0 10px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin-bottom:5px}
+a{color:var(--amber)}
+.toc{columns:2;column-gap:24px;padding-left:20px}
+.toc li{break-inside:avoid}
+.note{border-radius:6px;padding:10px 14px;margin:0 0 12px;font-size:14px}
+.note.tip{background:var(--goSoft)} .note.warn{background:var(--amberSoft)}
+ol.steps{list-style:none;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;display:flex;gap:10px}
+ol.steps li:before{content:counter(s);flex:0 0 22px;height:22px;border-radius:50%;background:#262C35;color:var(--amber);font:700 12px/22px Arimo,Arial,sans-serif;text-align:center;margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 12px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--soft)}
+.missing{background:#4A1D1D;color:#FFB4B0;border-radius:4px;padding:0 4px}
+footer{color:var(--soft);font-size:13px;text-align:center;margin-top:24px}
+@media (max-width:560px){.toc{columns:1}h1{font-size:25px}.card{padding:18px}table{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="./">Od<i></i></a><a class="btn" href="./">Buka Odo</a></header>
+<style>
+.hero-s{background:var(--grad);color:#0B0D10;border-radius:6px;padding:22px 20px;margin:4px 0 14px}
+.hero-s h1{color:#0B0D10;margin:0 0 8px;font-size:26px;line-height:1.25}
+.hero-s p{margin:0 0 10px;color:rgba(11,13,16,.85)}.hero-s b{color:#0B0D10}
+.hero-s .btn{background:#0B0D10;color:#C6F432;display:inline-block}
+.need{margin:0;padding-left:20px}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.jump a{font-size:13px;text-decoration:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:4px;padding:6px 10px}
+.step .sh{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.step .sh h2{margin:0}
+.num{flex:0 0 34px;height:34px;border-radius:6px;background:var(--grad);color:#0B0D10;font-weight:800;font-size:17px;display:grid;place-items:center}
+.btn.big{display:inline-block;font-size:16px;padding:12px 18px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 12px}
+.shots.one{grid-template-columns:minmax(0,260px);justify-content:center}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line);background:#000}
+.shots figcaption{font-size:13px;color:var(--soft);text-align:center;margin-top:6px;line-height:1.35}
+.plats{display:grid;gap:12px;margin:10px 0}
+.plat{border:1px solid var(--line);border-radius:6px;padding:12px 14px;background:rgba(255,255,255,.02)}
+.plat .ph{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.plat .ico{width:34px;height:34px;border-radius:6px;background:#262C35;color:var(--amber);display:grid;place-items:center;flex:0 0 34px}
+.pro{border:1px solid rgba(198,244,50,.45);background:rgba(198,244,50,.06);border-radius:6px;padding:14px 16px;margin:12px 0}
+.pro h3{margin:0 0 6px;font-size:16px;display:flex;align-items:center;gap:8px}
+.pro .tag{background:var(--grad);color:#0B0D10;font-size:11px;font-weight:800;border-radius:4px;padding:2px 7px}
+.pro p{margin:0 0 10px}
+table.rows{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+table.rows th,table.rows td{text-align:left;vertical-align:top;padding:9px 6px;border-top:1px solid var(--line)}
+table.rows th{width:38%;color:var(--ink);font-weight:700;text-transform:none;letter-spacing:0;font-size:14px}
+table.rows td{color:var(--soft)}
+@media (min-width:640px){.plats{grid-template-columns:1fr 1fr 1fr}.shots{grid-template-columns:repeat(4,1fr)}.shots.one{grid-template-columns:minmax(0,240px)}}
+</style>
+<nav class="langs" style="display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px;margin:4px 0 14px"><a href="start.html" hreflang="en-AU">English</a><a href="start-zh.html" hreflang="zh-Hans">中文</a><a href="start-hi.html" hreflang="hi">हिन्दी</a><a href="start-ne.html" hreflang="ne">नेपाली</a><a href="start-es.html" hreflang="es">Español</a><a href="start-pt.html" hreflang="pt-BR">Português</a><a href="start-vi.html" hreflang="vi">Tiếng Việt</a><b>Bahasa Indonesia</b></nav>
+<div class="hero-s"><h1>Mulai di sini: Odo dalam 8 langkah mudah</h1><p>Odo mencatat shift antar makanan dan angkut penumpangmu, kilometer yang kamu tempuh untuk kerja, dan biaya kerjamu. Saat lapor pajak, Odo memberi semua yang dibutuhkan akuntan atau myTax. Menyiapkannya hanya sekitar <b>5 menit</b>.</p><p><a class="btn" href="./">Buka Odo →</a></p></div>
+<div class="card"><h2>Yang kamu perlukan</h2><ul class="need"><li>HP (iPhone atau Android) dengan internet</li><li>Alamat email</li><li>Angka odometer mobilmu (angka km di dasbor)</li></ul><p style="margin-top:10px">Tidak perlu mengunduh apa pun dari App Store atau Google Play. Odo dibuka dari tautan, lalu ada di layar utama seperti aplikasi biasa. Pemakaiannya <b>gratis</b>.</p></div>
+<nav class="jump" aria-label="Langkah"><a href="#open">1. Buka tautan Odo</a><a href="#home">2. Pasang Odo di layar utama</a><a href="#account">3. Buat akun gratis</a><a href="#setup">4. Beri tahu Odo tentang dirimu (1 menit)</a><a href="#shift">5. Catat setiap shift</a><a href="#expense">6. Tambahkan biaya kerjamu</a><a href="#numbers">7. Cek angka-angkamu</a><a href="#export">8. Saat lapor pajak: ekspor</a></nav>
+<section class="card step" id="open">
+<div class="sh"><span class="num">1</span><h2>Buka tautan Odo</h2></div>
+<p>Di HP-mu, buka <b>inova07.github.io/odo</b>.</p><p><b>iPhone:</b> pakai <b>Safari</b> (kompas biru). <b>Android:</b> pakai <b>Chrome</b> atau <b>Samsung Internet</b>.</p><p>Tur singkat akan dimulai. Pilih <b>bahasa</b> dulu, lalu ketuk <b>Tunjukkan</b> atau <b>Lewati</b>.</p>
+<p><a class="btn big" href="./">Buka Odo →</a></p>
+
+
+
+<div class="shots one"><figure><img src="start/id/1-welcome.webp" alt="Pilih bahasamu di layar pertama" loading="lazy" width="540" height="1169"><figcaption>Pilih bahasamu di layar pertama</figcaption></figure></div>
+
+
+</section>
+<section class="card step" id="home">
+<div class="sh"><span class="num">2</span><h2>Pasang Odo di layar utama</h2></div>
+<p>Cukup sekali. Setelah itu, Odo terbuka dengan sekali ketuk, layar penuh, dan tetap jalan tanpa sinyal.</p>
+
+<div class="plats"><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg></span><b>iPhone (Safari)</b></div><ol class="steps"><li><span>Ketuk tombol <b>Bagikan</b> di bawah layar (kotak dengan panah ke atas).</span></li><li><span>Gulir ke bawah dan ketuk <b>Tambah ke Layar Utama</b>.</span></li><li><span>Ketuk <b>Tambah</b> di pojok kanan atas.</span></li><li><span>Mulai sekarang, buka Odo dari ikon <b>Od</b> yang baru di layar utama.</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg></span><b>Android (Chrome)</b></div><ol class="steps"><li><span>Ketuk menu <b>⋮</b> (tiga titik, kanan atas).</span></li><li><span>Ketuk <b>Instal aplikasi</b> atau <b>Tambahkan ke layar utama</b>.</span></li><li><span>Ketuk <b>Instal</b> atau <b>Tambahkan</b>.</span></li><li><span>Buka Odo dari ikon baru di layar utama.</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span><b>Android (Samsung Internet)</b></div><ol class="steps"><li><span>Ketuk menu <b>≡</b> (tiga garis, kanan bawah).</span></li><li><span>Ketuk <b>Tambah halaman ke</b>, lalu <b>Layar Depan</b>.</span></li><li><span>Ketuk <b>Tambah</b>.</span></li><li><span>Ada ikon <b>instal</b> kecil di bilah alamat? Mengetuknya juga sama saja.</span></li></ol></div></div>
+
+
+
+
+<div class="note tip">💡 <b>Tidak menemukan tombolnya?</b> Simpan Odo sebagai bookmark. <b>iPhone:</b> Bagikan → <b>Tambah Bookmark</b>. <b>Chrome:</b> ⋮ → ketuk <b>bintang</b>. <b>Samsung Internet:</b> ≡ → <b>Tambah halaman ke</b> → <b>Bookmark</b>.</div>
+</section>
+<section class="card step" id="account">
+<div class="sh"><span class="num">3</span><h2>Buat akun gratis</h2></div>
+<p>Tanpa akun, catatanmu hanya ada di HP ini. Dengan akun, Odo mencadangkan semuanya, dan kamu bisa masuk di HP baru lalu mendapatkan semuanya kembali.</p>
+
+
+<ol class="steps"><li><span>Ketuk <b>ikon orang</b> di kanan atas.</span></li><li><span>Ketuk <b>Akun baru</b>.</span></li><li><span>Ketik <b>email</b> dan buat <b>kata sandi</b> (minimal 6 karakter).</span></li><li><span>Ketuk <b>Buat akun</b>. Kalau diminta, buka email dari Odo dan ketuk tautannya untuk konfirmasi, lalu masuk.</span></li></ol>
+
+<div class="shots"><figure><img src="start/id/3a-account-icon.webp" alt="1. Ketuk ikon orang" loading="lazy" width="540" height="1169"><figcaption>1. Ketuk ikon orang</figcaption></figure><figure><img src="start/id/3b-new-account.webp" alt="2. Akun baru → Buat akun" loading="lazy" width="540" height="1169"><figcaption>2. Akun baru → Buat akun</figcaption></figure></div>
+
+<div class="note tip">💡 <b>HP baru?</b> Buka tautannya, ketuk ikon orang, pilih <b>Masuk</b>, dan pakai email serta kata sandi yang sama. Catatanmu kembali. <b>Titik hijau</b> di ikon orang berarti sudah tercadang.</div>
+</section>
+<section class="card step" id="setup">
+<div class="sh"><span class="num">4</span><h2>Beri tahu Odo tentang dirimu (1 menit)</h2></div>
+
+
+
+<ol class="steps"><li><span>Ketuk <b>ikon roda gigi</b> di kanan atas untuk membuka <b>Pengaturan</b>.</span></li><li><span><b>Kendaraanmu:</b> pilih Mobil, Motor, atau Sepeda.</span></li><li><span><b>Wilayah:</b> biarkan <b>Australia</b>.</span></li><li><span><b>Perkiraan total penghasilan tahun ini:</b> perkiraan kasar semua penghasilanmu, termasuk pekerjaan lain. Odo memakainya untuk menghitung tarif pajakmu.</span></li><li><span>Ketuk <b>Simpan pengaturan</b> di bawah.</span></li></ol>
+
+<div class="shots"><figure><img src="start/id/4a-gear.webp" alt="1. Ketuk roda gigi" loading="lazy" width="540" height="1169"><figcaption>1. Ketuk roda gigi</figcaption></figure><figure><img src="start/id/4b-income.webp" alt="2. Isi perkiraan penghasilan" loading="lazy" width="540" height="1169"><figcaption>2. Isi perkiraan penghasilan</figcaption></figure></div>
+
+<div class="note tip">💡 <b>Naik sepeda atau motor?</b> Odo beralih ke <b>Mode rider</b>. Tarif per km hanya untuk mobil, jadi potonganmu berasal dari biaya: HP, perbaikan, baterai, tas, dan perlengkapan.</div>
+</section>
+<section class="card step" id="shift">
+<div class="sh"><span class="num">5</span><h2>Catat setiap shift</h2></div>
+<p>Kilometer biasanya potongan pajak terbesarmu. Cukup dua ketukan per shift.</p>
+
+
+<ol class="steps"><li><span><b>Saat mulai kerja:</b> ketuk <b>Mulai shift</b>, pilih aplikasinya (Uber, DoorDash…), ketik angka <b>odometer</b>, lalu ketuk <b>Mulai kerja</b>. Odo boleh ditutup; waktunya tetap berjalan.</span></li><li><span><b>Saat selesai:</b> ketuk <b>Akhiri shift</b>, ketik angka odometer yang baru dan <b>pendapatanmu</b>, lalu ketuk <b>Simpan shift</b>.</span></li></ol>
+
+<div class="shots"><figure><img src="start/id/5a-start-button.webp" alt="1. Ketuk Mulai shift" loading="lazy" width="540" height="1169"><figcaption>1. Ketuk Mulai shift</figcaption></figure><figure><img src="start/id/5b-clock-on.webp" alt="2. Odometer → Mulai kerja" loading="lazy" width="540" height="1169"><figcaption>2. Odometer → Mulai kerja</figcaption></figure><figure><img src="start/id/5c-on-shift.webp" alt="3. Selesai kerja: Akhiri shift" loading="lazy" width="540" height="1169"><figcaption>3. Selesai kerja: Akhiri shift</figcaption></figure><figure><img src="start/id/5d-end-shift.webp" alt="4. Odometer akhir + pendapatan → Simpan" loading="lazy" width="540" height="1169"><figcaption>4. Odometer akhir + pendapatan → Simpan</figcaption></figure></div>
+<div class="pro"><h3><span class="tag">PRO</span>Foto odometermu</h3><p>Dengan <b>Odo Pro</b>, ketuk <b>Angka awal</b> saat mulai shift untuk memotret odometer, dan tambahkan foto <b>Akhir</b> saat selesai. Setiap foto tersimpan bersama shift, lengkap dengan tanggal dan jam, dan dicadangkan ke akunmu.</p><p><b>Kenapa ini penting:</b> ATO bisa memintamu menunjukkan cara menghitung kilometer kerja, dan kamu wajib menyimpan catatan selama <b>5 tahun</b> setelah lapor. Foto di awal dan akhir setiap shift adalah bukti kuat yang sulit dibantah. Kamu juga tidak akan kehilangan atau salah tulis angka, meski ganti HP. Saat lapor pajak, <b>Ekspor → Unduh foto</b> memberi agen pajakmu semua foto dalam satu ZIP.</p><div class="shots one"><figure><img src="start/id/5e-odo-photo.webp" alt="Foto odometer tersimpan bersama shift" loading="lazy" width="540" height="1169"><figcaption>Foto odometer tersimpan bersama shift</figcaption></figure></div></div>
+<div class="note tip">💡 <b>Lupa mulai?</b> Tab Shift → <b>+ Shift</b> dan isi belakangan. <b>Dibayar mingguan?</b> Tab Shift → <b>+ Minggu</b> dan salin total dari laporan mingguanmu. Hanya km <b>kerja</b> yang dihitung: perjalanan dari rumah ke order pertama mungkin tidak dihitung.</div>
+</section>
+<section class="card step" id="expense">
+<div class="sh"><span class="num">6</span><h2>Tambahkan biaya kerjamu</h2></div>
+
+
+
+<ol class="steps"><li><span>Buka tab <b>Pengeluaran</b> dan ketuk <b>Tambah pengeluaran</b>.</span></li><li><span>Pilih <b>kategori</b> (misalnya HP &amp; internet) dan ketik <b>jumlahnya</b>.</span></li><li><span>Geser <b>Untuk kerja</b> sesuai bagian yang dipakai kerja. HP dipakai 70% untuk antar? Atur ke <b>70%</b>.</span></li><li><span>Ketuk <b>Simpan</b>.</span></li></ol>
+
+<div class="shots one"><figure><img src="start/id/6-expense.webp" alt="Atur berapa bagian untuk kerja" loading="lazy" width="540" height="1169"><figcaption>Atur berapa bagian untuk kerja</figcaption></figure></div>
+
+<div class="note warn">⚠️ <b>Pakai mobil? Jangan tambahkan bensin, rego, asuransi, atau servis.</b> Tarif per km ATO (91c per km di 2026–27) sudah mencakup semua itu. Parkir dan tol boleh ditambahkan.</div>
+</section>
+<section class="card step" id="numbers">
+<div class="sh"><span class="num">7</span><h2>Cek angka-angkamu</h2></div>
+
+
+
+
+<table class="rows"><tr><th>Pajak yang dihemat dari potonganmu</th><td>Seberapa banyak <b>pajak yang berkurang</b> berkat klaim kerjamu. Ini bukan pengembalian pajak: aplikasi tidak memotong pajak dari bayaranmu, jadi biasanya kamu tetap berutang pajak.</td></tr><tr><th>Penghasilan / Potongan / Bersih</th><td>Berapa yang kamu dapat, berapa yang bisa diklaim, dan kira-kira labamu.</td></tr><tr><th>Sisihkan sekitar $… per minggu</th><td>Tabung sebanyak itu tiap minggu supaya tagihan pajak di bulan Juli tidak bikin kaget.</td></tr></table>
+<div class="shots one"><figure><img src="start/id/7-home.webp" alt="Setahun dalam sekilas" loading="lazy" width="540" height="1169"><figcaption>Setahun dalam sekilas</figcaption></figure></div>
+
+<div class="note tip">💡 Ketuk ikon <b>ⓘ</b> mana pun untuk penjelasan singkat.</div>
+</section>
+<section class="card step" id="export">
+<div class="sh"><span class="num">8</span><h2>Saat lapor pajak: ekspor</h2></div>
+
+
+
+<ol class="steps"><li><span>Setelah 30 Juni, buka tab <b>Ekspor</b>.</span></li><li><span>Unduh <b>shift</b>, <b>pengeluaran</b>, dan <b>ringkasan</b>. Bisa dibuka di Excel atau Google Sheets.</span></li><li><span>Kirim ke agen pajakmu, atau pakai totalnya di myTax.</span></li></ol>
+
+<div class="shots one"><figure><img src="start/id/8-export.webp" alt="Semua yang dibutuhkan akuntanmu" loading="lazy" width="540" height="1169"><figcaption>Semua yang dibutuhkan akuntanmu</figcaption></figure></div>
+
+<div class="note tip">💡 Ekspor termasuk di <b>Pro tahunan</b>, atau beli <b>Paket Pajak</b> sekali bayar (A$14.99) untuk satu tahun saja. Keduanya biaya kerja yang bisa diklaim.</div>
+</section>
+<div class="card"><h2>Butuh bantuan?</h2><ul class="need"><li><b>Panduan lengkap:</b> Pengaturan → <b>Cara memakai Odo</b>, atau <a href="guide-id.html">panduan online</a>.</li><li><b>Ada pertanyaan?</b> Pengaturan → <b>Bantuan &amp; dukungan</b>. Kalau kamu sudah masuk, kami membalas langsung di aplikasi.</li></ul></div>
+<p class="sub" style="text-align:center">Odo adalah alat pencatatan, bukan nasihat pajak. Pastikan aturan terbaru di ato.gov.au atau dengan agen pajak terdaftar. · Diperbarui 17 November 2026</p>
+<footer><a href="./">Odo</a> · <a href="start-id.html">Mulai di sini</a> · <a href="guide-id.html">Panduan</a> · <a href="terms.html">Ketentuan Penggunaan</a> · <a href="privacy.html">Kebijakan Privasi</a></footer>
+</div>
+<script>
+(function(){var c=window.ODO_CONFIG||{};
+/* optional bits (like the ABN) simply disappear when not filled in */
+document.querySelectorAll("[data-optional]").forEach(function(el){if(!c[el.getAttribute("data-optional")])el.remove();});
+var L={BUSINESS_NAME:"[your business name]",ABN:"[your ABN]",SUPPORT_EMAIL:"[your support email]",BUSINESS_STATE:"[state]",PRIVACY_UPDATED:"[date]"};
+document.querySelectorAll("[data-cfg]").forEach(function(el){var k=el.getAttribute("data-cfg"),v=c[k];
+if(!v){el.textContent=L[k]||"["+k+"]";el.className="missing";return;}
+if(el.hasAttribute("data-mailto")){var a=document.createElement("a");a.href="mailto:"+v;a.textContent=v;el.replaceWith(a);}else el.textContent=v;});})();
+</script>
+</body>
+</html>

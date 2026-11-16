@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Bắt đầu tại đây · Odo</title>
+<meta name="description" content="Mới dùng Odo? Thiết lập trong 5 phút: mở liên kết, thêm vào màn hình chính, tạo tài khoản miễn phí và ghi ca làm đầu tiên." />
+<meta name="theme-color" content="#141A2E" />
+<link rel="icon" type="image/png" href="favicon-32.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<script src="odo-config.js"></script>
+<style>:root{--bg:#0B0D10;--surface:#14171C;--ink:#F3F4F6;--soft:#9BA3AF;--line:#252A31;--amber:#C6F432;--amberSoft:rgba(198,244,50,.14);--goSoft:rgba(45,212,191,.14);--grad:linear-gradient(135deg,#C6F432,#2DD4BF);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Arimo,Arial,Helvetica,"Noto Sans Devanagari","PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.logo{font-weight:800;font-size:26px;letter-spacing:-.5px;color:var(--ink);text-decoration:none;display:inline-flex;align-items:baseline;gap:2px}
+.logo i{width:16px;height:16px;border-radius:4px;background:var(--grad);display:inline-block;position:relative;top:1px;margin-left:1px}
+.btn{background:var(--grad);color:#0B0D10;text-decoration:none;font-weight:800;font-size:14px;padding:10px 14px;border-radius:6px;white-space:nowrap}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px;letter-spacing:-.5px}
+.sub{color:var(--soft);margin:0 0 20px;font-size:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px 22px;margin-bottom:12px}
+h2{font-size:19px;margin:0 0 10px;scroll-margin-top:16px}
+h3{font-size:15.5px;margin:16px 0 6px}
+p,li{font-size:15px}
+p{margin:0 0 10px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin-bottom:5px}
+a{color:var(--amber)}
+.toc{columns:2;column-gap:24px;padding-left:20px}
+.toc li{break-inside:avoid}
+.note{border-radius:6px;padding:10px 14px;margin:0 0 12px;font-size:14px}
+.note.tip{background:var(--goSoft)} .note.warn{background:var(--amberSoft)}
+ol.steps{list-style:none;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;display:flex;gap:10px}
+ol.steps li:before{content:counter(s);flex:0 0 22px;height:22px;border-radius:50%;background:#262C35;color:var(--amber);font:700 12px/22px Arimo,Arial,sans-serif;text-align:center;margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 12px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--soft)}
+.missing{background:#4A1D1D;color:#FFB4B0;border-radius:4px;padding:0 4px}
+footer{color:var(--soft);font-size:13px;text-align:center;margin-top:24px}
+@media (max-width:560px){.toc{columns:1}h1{font-size:25px}.card{padding:18px}table{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="./">Od<i></i></a><a class="btn" href="./">Mở Odo</a></header>
+<style>
+.hero-s{background:var(--grad);color:#0B0D10;border-radius:6px;padding:22px 20px;margin:4px 0 14px}
+.hero-s h1{color:#0B0D10;margin:0 0 8px;font-size:26px;line-height:1.25}
+.hero-s p{margin:0 0 10px;color:rgba(11,13,16,.85)}.hero-s b{color:#0B0D10}
+.hero-s .btn{background:#0B0D10;color:#C6F432;display:inline-block}
+.need{margin:0;padding-left:20px}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.jump a{font-size:13px;text-decoration:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:4px;padding:6px 10px}
+.step .sh{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.step .sh h2{margin:0}
+.num{flex:0 0 34px;height:34px;border-radius:6px;background:var(--grad);color:#0B0D10;font-weight:800;font-size:17px;display:grid;place-items:center}
+.btn.big{display:inline-block;font-size:16px;padding:12px 18px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 12px}
+.shots.one{grid-template-columns:minmax(0,260px);justify-content:center}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line);background:#000}
+.shots figcaption{font-size:13px;color:var(--soft);text-align:center;margin-top:6px;line-height:1.35}
+.plats{display:grid;gap:12px;margin:10px 0}
+.plat{border:1px solid var(--line);border-radius:6px;padding:12px 14px;background:rgba(255,255,255,.02)}
+.plat .ph{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.plat .ico{width:34px;height:34px;border-radius:6px;background:#262C35;color:var(--amber);display:grid;place-items:center;flex:0 0 34px}
+.pro{border:1px solid rgba(198,244,50,.45);background:rgba(198,244,50,.06);border-radius:6px;padding:14px 16px;margin:12px 0}
+.pro h3{margin:0 0 6px;font-size:16px;display:flex;align-items:center;gap:8px}
+.pro .tag{background:var(--grad);color:#0B0D10;font-size:11px;font-weight:800;border-radius:4px;padding:2px 7px}
+.pro p{margin:0 0 10px}
+table.rows{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+table.rows th,table.rows td{text-align:left;vertical-align:top;padding:9px 6px;border-top:1px solid var(--line)}
+table.rows th{width:38%;color:var(--ink);font-weight:700;text-transform:none;letter-spacing:0;font-size:14px}
+table.rows td{color:var(--soft)}
+@media (min-width:640px){.plats{grid-template-columns:1fr 1fr 1fr}.shots{grid-template-columns:repeat(4,1fr)}.shots.one{grid-template-columns:minmax(0,240px)}}
+</style>
+<nav class="langs" style="display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px;margin:4px 0 14px"><a href="start.html" hreflang="en-AU">English</a><a href="start-zh.html" hreflang="zh-Hans">中文</a><a href="start-hi.html" hreflang="hi">हिन्दी</a><a href="start-ne.html" hreflang="ne">नेपाली</a><a href="start-es.html" hreflang="es">Español</a><a href="start-pt.html" hreflang="pt-BR">Português</a><b>Tiếng Việt</b><a href="start-id.html" hreflang="id">Bahasa Indonesia</a></nav>
+<div class="hero-s"><h1>Bắt đầu tại đây: Odo trong 8 bước đơn giản</h1><p>Odo ghi lại các ca giao đồ ăn và chở khách, số km bạn chạy vì công việc và chi phí công việc. Đến mùa thuế, Odo đưa cho bạn mọi thứ kế toán hoặc myTax cần. Thiết lập chỉ mất khoảng <b>5 phút</b>.</p><p><a class="btn" href="./">Mở Odo →</a></p></div>
+<div class="card"><h2>Bạn cần chuẩn bị</h2><ul class="need"><li>Điện thoại (iPhone hoặc Android) có internet</li><li>Một địa chỉ email</li><li>Số đồng hồ km của xe (con số km trên bảng điều khiển)</li></ul><p style="margin-top:10px">Không cần tải gì từ App Store hay Google Play. Odo mở bằng một liên kết, sau đó nằm trên màn hình chính như ứng dụng bình thường. Dùng <b>miễn phí</b>.</p></div>
+<nav class="jump" aria-label="Các bước"><a href="#open">1. Mở liên kết Odo</a><a href="#home">2. Đưa Odo ra màn hình chính</a><a href="#account">3. Tạo tài khoản miễn phí</a><a href="#setup">4. Cho Odo biết về bạn (1 phút)</a><a href="#shift">5. Ghi lại mọi ca làm</a><a href="#expense">6. Thêm chi phí công việc</a><a href="#numbers">7. Xem các con số</a><a href="#export">8. Mùa thuế: xuất dữ liệu</a></nav>
+<section class="card step" id="open">
+<div class="sh"><span class="num">1</span><h2>Mở liên kết Odo</h2></div>
+<p>Trên điện thoại, mở <b>inova07.github.io/odo</b>.</p><p><b>iPhone:</b> dùng <b>Safari</b> (biểu tượng la bàn xanh). <b>Android:</b> dùng <b>Chrome</b> hoặc <b>Samsung Internet</b>.</p><p>Một phần tham quan ngắn sẽ bắt đầu. Chọn <b>ngôn ngữ</b> trước, rồi chạm <b>Chỉ cho tôi</b> hoặc <b>Bỏ qua</b>.</p>
+<p><a class="btn big" href="./">Mở Odo →</a></p>
+
+
+
+<div class="shots one"><figure><img src="start/vi/1-welcome.webp" alt="Chọn ngôn ngữ ở màn hình đầu tiên" loading="lazy" width="540" height="1169"><figcaption>Chọn ngôn ngữ ở màn hình đầu tiên</figcaption></figure></div>
+
+
+</section>
+<section class="card step" id="home">
+<div class="sh"><span class="num">2</span><h2>Đưa Odo ra màn hình chính</h2></div>
+<p>Chỉ cần làm một lần. Sau đó, Odo mở bằng một chạm, toàn màn hình, và dùng được cả khi mất sóng.</p>
+
+<div class="plats"><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg></span><b>iPhone (Safari)</b></div><ol class="steps"><li><span>Chạm nút <b>Chia sẻ</b> ở dưới màn hình (hình vuông có mũi tên chỉ lên).</span></li><li><span>Kéo xuống và chạm <b>Thêm vào MH chính</b>.</span></li><li><span>Chạm <b>Thêm</b> ở góc trên bên phải.</span></li><li><span>Từ giờ, mở Odo bằng biểu tượng <b>Od</b> mới trên màn hình chính.</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg></span><b>Android (Chrome)</b></div><ol class="steps"><li><span>Chạm menu <b>⋮</b> (ba chấm, góc trên bên phải).</span></li><li><span>Chạm <b>Cài đặt ứng dụng</b> hoặc <b>Thêm vào màn hình chính</b>.</span></li><li><span>Chạm <b>Cài đặt</b> hoặc <b>Thêm</b>.</span></li><li><span>Mở Odo bằng biểu tượng mới trên màn hình chính.</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span><b>Android (Samsung Internet)</b></div><ol class="steps"><li><span>Chạm menu <b>≡</b> (ba gạch, góc dưới bên phải).</span></li><li><span>Chạm <b>Thêm trang vào</b>, rồi <b>Màn hình chờ</b>.</span></li><li><span>Chạm <b>Thêm</b>.</span></li><li><span>Thấy biểu tượng <b>cài đặt</b> nhỏ trên thanh địa chỉ? Chạm vào đó cũng được.</span></li></ol></div></div>
+
+
+
+
+<div class="note tip">💡 <b>Không tìm thấy nút?</b> Hãy lưu Odo làm dấu trang. <b>iPhone:</b> Chia sẻ → <b>Thêm dấu trang</b>. <b>Chrome:</b> ⋮ → chạm <b>ngôi sao</b>. <b>Samsung Internet:</b> ≡ → <b>Thêm trang vào</b> → <b>Dấu trang</b>.</div>
+</section>
+<section class="card step" id="account">
+<div class="sh"><span class="num">3</span><h2>Tạo tài khoản miễn phí</h2></div>
+<p>Không có tài khoản, dữ liệu chỉ nằm trên điện thoại này. Có tài khoản, Odo sao lưu mọi thứ, và bạn đăng nhập trên điện thoại mới là lấy lại được hết.</p>
+
+
+<ol class="steps"><li><span>Chạm <b>biểu tượng người</b> ở góc trên bên phải.</span></li><li><span>Chạm <b>Tài khoản mới</b>.</span></li><li><span>Nhập <b>email</b> và đặt <b>mật khẩu</b> (ít nhất 6 ký tự).</span></li><li><span>Chạm <b>Tạo tài khoản</b>. Nếu Odo yêu cầu, mở email từ Odo và chạm vào liên kết để xác nhận, rồi đăng nhập.</span></li></ol>
+
+<div class="shots"><figure><img src="start/vi/3a-account-icon.webp" alt="1. Chạm biểu tượng người" loading="lazy" width="540" height="1169"><figcaption>1. Chạm biểu tượng người</figcaption></figure><figure><img src="start/vi/3b-new-account.webp" alt="2. Tài khoản mới → Tạo tài khoản" loading="lazy" width="540" height="1169"><figcaption>2. Tài khoản mới → Tạo tài khoản</figcaption></figure></div>
+
+<div class="note tip">💡 <b>Điện thoại mới?</b> Mở liên kết, chạm biểu tượng người, chọn <b>Đăng nhập</b> và dùng cùng email, mật khẩu. Dữ liệu sẽ trở lại. <b>Chấm xanh lá</b> trên biểu tượng người nghĩa là đã sao lưu.</div>
+</section>
+<section class="card step" id="setup">
+<div class="sh"><span class="num">4</span><h2>Cho Odo biết về bạn (1 phút)</h2></div>
+
+
+
+<ol class="steps"><li><span>Chạm <b>biểu tượng bánh răng</b> ở góc trên bên phải để mở <b>Cài đặt</b>.</span></li><li><span><b>Phương tiện của bạn:</b> chọn Ô tô, Xe máy hoặc Xe đạp.</span></li><li><span><b>Khu vực:</b> giữ nguyên <b>Úc</b>.</span></li><li><span><b>Tổng thu nhập dự kiến năm nay:</b> ước tính sơ bộ toàn bộ thu nhập, kể cả công việc khác. Odo dùng con số này để tính thuế suất.</span></li><li><span>Chạm <b>Lưu cài đặt</b> ở dưới cùng.</span></li></ol>
+
+<div class="shots"><figure><img src="start/vi/4a-gear.webp" alt="1. Chạm bánh răng" loading="lazy" width="540" height="1169"><figcaption>1. Chạm bánh răng</figcaption></figure><figure><img src="start/vi/4b-income.webp" alt="2. Nhập thu nhập dự kiến" loading="lazy" width="540" height="1169"><figcaption>2. Nhập thu nhập dự kiến</figcaption></figure></div>
+
+<div class="note tip">💡 <b>Đi xe đạp hoặc xe máy?</b> Odo chuyển sang <b>Chế độ xe máy/xe đạp</b>. Mức theo km chỉ dành cho ô tô, nên khoản khấu trừ của bạn đến từ chi phí: điện thoại, sửa chữa, pin, túi và đồ nghề.</div>
+</section>
+<section class="card step" id="shift">
+<div class="sh"><span class="num">5</span><h2>Ghi lại mọi ca làm</h2></div>
+<p>Số km thường là khoản khấu trừ lớn nhất của bạn. Mỗi ca chỉ cần hai lần chạm.</p>
+
+
+<ol class="steps"><li><span><b>Khi bắt đầu:</b> chạm <b>Bắt đầu ca</b>, chọn app (Uber, DoorDash…), nhập số <b>đồng hồ km</b>, chạm <b>Bắt đầu</b>. Bạn có thể đóng Odo; đồng hồ vẫn chạy.</span></li><li><span><b>Khi xong:</b> chạm <b>Kết thúc ca</b>, nhập số đồng hồ km mới và số tiền <b>kiếm được</b>, rồi chạm <b>Lưu ca</b>.</span></li></ol>
+
+<div class="shots"><figure><img src="start/vi/5a-start-button.webp" alt="1. Chạm Bắt đầu ca" loading="lazy" width="540" height="1169"><figcaption>1. Chạm Bắt đầu ca</figcaption></figure><figure><img src="start/vi/5b-clock-on.webp" alt="2. Đồng hồ km → Bắt đầu" loading="lazy" width="540" height="1169"><figcaption>2. Đồng hồ km → Bắt đầu</figcaption></figure><figure><img src="start/vi/5c-on-shift.webp" alt="3. Xong việc: Kết thúc ca" loading="lazy" width="540" height="1169"><figcaption>3. Xong việc: Kết thúc ca</figcaption></figure><figure><img src="start/vi/5d-end-shift.webp" alt="4. Số km cuối + thu nhập → Lưu" loading="lazy" width="540" height="1169"><figcaption>4. Số km cuối + thu nhập → Lưu</figcaption></figure></div>
+<div class="pro"><h3><span class="tag">PRO</span>Chụp ảnh đồng hồ km</h3><p>Với <b>Odo Pro</b>, chạm <b>Số lúc đầu</b> khi bắt đầu ca để chụp đồng hồ km, và thêm ảnh <b>Kết thúc</b> khi xong. Mỗi ảnh được lưu cùng ca, có ngày giờ, và sao lưu vào tài khoản.</p><p><b>Vì sao quan trọng:</b> ATO có thể yêu cầu bạn chứng minh cách tính số km công việc, và bạn phải giữ hồ sơ <b>5 năm</b> sau khi nộp tờ khai. Ảnh chụp lúc bắt đầu và kết thúc mỗi ca là bằng chứng chắc chắn, khó bị bác bỏ. Bạn cũng không bao giờ mất hoặc ghi sai số, kể cả khi đổi điện thoại. Đến mùa thuế, <b>Xuất → Tải ảnh</b> gửi đại lý thuế toàn bộ ảnh trong một tệp ZIP.</p><div class="shots one"><figure><img src="start/vi/5e-odo-photo.webp" alt="Ảnh đồng hồ km lưu cùng ca làm" loading="lazy" width="540" height="1169"><figcaption>Ảnh đồng hồ km lưu cùng ca làm</figcaption></figure></div></div>
+<div class="note tip">💡 <b>Quên bắt đầu ca?</b> Tab Ca làm → <b>+ Ca</b> để nhập sau. <b>Được trả theo tuần?</b> Tab Ca làm → <b>+ Tuần</b> và chép tổng từ bảng kê tuần. Chỉ tính km <b>công việc</b>: quãng đường từ nhà đến đơn đầu tiên có thể không được tính.</div>
+</section>
+<section class="card step" id="expense">
+<div class="sh"><span class="num">6</span><h2>Thêm chi phí công việc</h2></div>
+
+
+
+<ol class="steps"><li><span>Vào tab <b>Chi phí</b> và chạm <b>Thêm chi phí</b>.</span></li><li><span>Chọn <b>danh mục</b> (ví dụ Điện thoại &amp; internet) và nhập <b>số tiền</b>.</span></li><li><span>Kéo <b>Dùng cho công việc</b> đến mức dùng cho công việc. Điện thoại dùng 70% để giao hàng? Đặt <b>70%</b>.</span></li><li><span>Chạm <b>Lưu</b>.</span></li></ol>
+
+<div class="shots one"><figure><img src="start/vi/6-expense.webp" alt="Đặt tỷ lệ dùng cho công việc" loading="lazy" width="540" height="1169"><figcaption>Đặt tỷ lệ dùng cho công việc</figcaption></figure></div>
+
+<div class="note warn">⚠️ <b>Lái ô tô? Đừng thêm xăng, rego, bảo hiểm hay bảo dưỡng.</b> Mức theo km của ATO (91c mỗi km năm 2026–27) đã bao gồm những khoản này. Phí đỗ xe và phí cầu đường thì thêm được.</div>
+</section>
+<section class="card step" id="numbers">
+<div class="sh"><span class="num">7</span><h2>Xem các con số</h2></div>
+
+
+
+
+<table class="rows"><tr><th>Thuế tiết kiệm nhờ khấu trừ</th><td>Số <b>thuế được giảm</b> nhờ các khoản khấu trừ công việc. Đây không phải tiền hoàn thuế: app không trừ thuế từ tiền công, nên thường bạn vẫn phải nộp một ít thuế.</td></tr><tr><th>Thu nhập / Khấu trừ / Ròng</th><td>Bạn kiếm được bao nhiêu, khấu trừ được bao nhiêu, và gần đúng lợi nhuận.</td></tr><tr><th>Để dành khoảng $… mỗi tuần</th><td>Mỗi tuần để dành chừng ấy để hóa đơn thuế tháng 7 không làm bạn bất ngờ.</td></tr></table>
+<div class="shots one"><figure><img src="start/vi/7-home.webp" alt="Cả năm trong một cái nhìn" loading="lazy" width="540" height="1169"><figcaption>Cả năm trong một cái nhìn</figcaption></figure></div>
+
+<div class="note tip">💡 Chạm vào biểu tượng <b>ⓘ</b> bất kỳ để xem giải thích nhanh.</div>
+</section>
+<section class="card step" id="export">
+<div class="sh"><span class="num">8</span><h2>Mùa thuế: xuất dữ liệu</h2></div>
+
+
+
+<ol class="steps"><li><span>Sau ngày 30 tháng 6, mở tab <b>Xuất</b>.</span></li><li><span>Tải <b>ca làm</b>, <b>chi phí</b> và <b>bản tóm tắt</b>. Mở được bằng Excel hoặc Google Sheets.</span></li><li><span>Gửi cho đại lý thuế, hoặc dùng các số tổng khi khai myTax.</span></li></ol>
+
+<div class="shots one"><figure><img src="start/vi/8-export.webp" alt="Mọi thứ kế toán cần" loading="lazy" width="540" height="1169"><figcaption>Mọi thứ kế toán cần</figcaption></figure></div>
+
+<div class="note tip">💡 Tính năng xuất có trong <b>Pro hàng năm</b>, hoặc mua <b>Gói thuế</b> một lần (A$14.99) cho một năm. Cả hai đều là chi phí công việc được khấu trừ.</div>
+</section>
+<div class="card"><h2>Cần trợ giúp?</h2><ul class="need"><li><b>Hướng dẫn đầy đủ:</b> Cài đặt → <b>Cách dùng Odo</b>, hoặc <a href="guide-vi.html">hướng dẫn trực tuyến</a>.</li><li><b>Có thắc mắc?</b> Cài đặt → <b>Trợ giúp &amp; hỗ trợ</b>. Nếu bạn đã đăng nhập, chúng tôi trả lời ngay trong app.</li></ul></div>
+<p class="sub" style="text-align:center">Odo là công cụ ghi chép, không phải tư vấn thuế. Hãy xác nhận quy định hiện hành tại ato.gov.au hoặc với đại lý thuế có đăng ký. · Cập nhật 17 tháng 11, 2026</p>
+<footer><a href="./">Odo</a> · <a href="start-vi.html">Bắt đầu tại đây</a> · <a href="guide-vi.html">Hướng dẫn sử dụng</a> · <a href="terms.html">Điều khoản sử dụng</a> · <a href="privacy.html">Chính sách quyền riêng tư</a></footer>
+</div>
+<script>
+(function(){var c=window.ODO_CONFIG||{};
+/* optional bits (like the ABN) simply disappear when not filled in */
+document.querySelectorAll("[data-optional]").forEach(function(el){if(!c[el.getAttribute("data-optional")])el.remove();});
+var L={BUSINESS_NAME:"[your business name]",ABN:"[your ABN]",SUPPORT_EMAIL:"[your support email]",BUSINESS_STATE:"[state]",PRIVACY_UPDATED:"[date]"};
+document.querySelectorAll("[data-cfg]").forEach(function(el){var k=el.getAttribute("data-cfg"),v=c[k];
+if(!v){el.textContent=L[k]||"["+k+"]";el.className="missing";return;}
+if(el.hasAttribute("data-mailto")){var a=document.createElement("a");a.href="mailto:"+v;a.textContent=v;el.replaceWith(a);}else el.textContent=v;});})();
+</script>
+</body>
+</html>

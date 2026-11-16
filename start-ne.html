@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ne">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>यहाँबाट सुरु गर्नुहोस् · Odo</title>
+<meta name="description" content="Odo पहिलो पटक प्रयोग गर्दै हुनुहुन्छ? ५ मिनेटमा सेट गर्नुहोस्: लिंक खोल्नुहोस्, होम स्क्रिनमा राख्नुहोस्, निःशुल्क खाता बनाउनुहोस् र पहिलो सिफ्ट राख्नुहोस्।" />
+<meta name="theme-color" content="#141A2E" />
+<link rel="icon" type="image/png" href="favicon-32.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<script src="odo-config.js"></script>
+<style>:root{--bg:#0B0D10;--surface:#14171C;--ink:#F3F4F6;--soft:#9BA3AF;--line:#252A31;--amber:#C6F432;--amberSoft:rgba(198,244,50,.14);--goSoft:rgba(45,212,191,.14);--grad:linear-gradient(135deg,#C6F432,#2DD4BF);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Arimo,Arial,Helvetica,"Noto Sans Devanagari","PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.logo{font-weight:800;font-size:26px;letter-spacing:-.5px;color:var(--ink);text-decoration:none;display:inline-flex;align-items:baseline;gap:2px}
+.logo i{width:16px;height:16px;border-radius:4px;background:var(--grad);display:inline-block;position:relative;top:1px;margin-left:1px}
+.btn{background:var(--grad);color:#0B0D10;text-decoration:none;font-weight:800;font-size:14px;padding:10px 14px;border-radius:6px;white-space:nowrap}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px;letter-spacing:-.5px}
+.sub{color:var(--soft);margin:0 0 20px;font-size:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px 22px;margin-bottom:12px}
+h2{font-size:19px;margin:0 0 10px;scroll-margin-top:16px}
+h3{font-size:15.5px;margin:16px 0 6px}
+p,li{font-size:15px}
+p{margin:0 0 10px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin-bottom:5px}
+a{color:var(--amber)}
+.toc{columns:2;column-gap:24px;padding-left:20px}
+.toc li{break-inside:avoid}
+.note{border-radius:6px;padding:10px 14px;margin:0 0 12px;font-size:14px}
+.note.tip{background:var(--goSoft)} .note.warn{background:var(--amberSoft)}
+ol.steps{list-style:none;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;display:flex;gap:10px}
+ol.steps li:before{content:counter(s);flex:0 0 22px;height:22px;border-radius:50%;background:#262C35;color:var(--amber);font:700 12px/22px Arimo,Arial,sans-serif;text-align:center;margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 12px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--soft)}
+.missing{background:#4A1D1D;color:#FFB4B0;border-radius:4px;padding:0 4px}
+footer{color:var(--soft);font-size:13px;text-align:center;margin-top:24px}
+@media (max-width:560px){.toc{columns:1}h1{font-size:25px}.card{padding:18px}table{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="./">Od<i></i></a><a class="btn" href="./">Odo खोल्नुहोस्</a></header>
+<style>
+.hero-s{background:var(--grad);color:#0B0D10;border-radius:6px;padding:22px 20px;margin:4px 0 14px}
+.hero-s h1{color:#0B0D10;margin:0 0 8px;font-size:26px;line-height:1.25}
+.hero-s p{margin:0 0 10px;color:rgba(11,13,16,.85)}.hero-s b{color:#0B0D10}
+.hero-s .btn{background:#0B0D10;color:#C6F432;display:inline-block}
+.need{margin:0;padding-left:20px}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.jump a{font-size:13px;text-decoration:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:4px;padding:6px 10px}
+.step .sh{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.step .sh h2{margin:0}
+.num{flex:0 0 34px;height:34px;border-radius:6px;background:var(--grad);color:#0B0D10;font-weight:800;font-size:17px;display:grid;place-items:center}
+.btn.big{display:inline-block;font-size:16px;padding:12px 18px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 12px}
+.shots.one{grid-template-columns:minmax(0,260px);justify-content:center}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line);background:#000}
+.shots figcaption{font-size:13px;color:var(--soft);text-align:center;margin-top:6px;line-height:1.35}
+.plats{display:grid;gap:12px;margin:10px 0}
+.plat{border:1px solid var(--line);border-radius:6px;padding:12px 14px;background:rgba(255,255,255,.02)}
+.plat .ph{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.plat .ico{width:34px;height:34px;border-radius:6px;background:#262C35;color:var(--amber);display:grid;place-items:center;flex:0 0 34px}
+.pro{border:1px solid rgba(198,244,50,.45);background:rgba(198,244,50,.06);border-radius:6px;padding:14px 16px;margin:12px 0}
+.pro h3{margin:0 0 6px;font-size:16px;display:flex;align-items:center;gap:8px}
+.pro .tag{background:var(--grad);color:#0B0D10;font-size:11px;font-weight:800;border-radius:4px;padding:2px 7px}
+.pro p{margin:0 0 10px}
+table.rows{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+table.rows th,table.rows td{text-align:left;vertical-align:top;padding:9px 6px;border-top:1px solid var(--line)}
+table.rows th{width:38%;color:var(--ink);font-weight:700;text-transform:none;letter-spacing:0;font-size:14px}
+table.rows td{color:var(--soft)}
+@media (min-width:640px){.plats{grid-template-columns:1fr 1fr 1fr}.shots{grid-template-columns:repeat(4,1fr)}.shots.one{grid-template-columns:minmax(0,240px)}}
+</style>
+<nav class="langs" style="display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px;margin:4px 0 14px"><a href="start.html" hreflang="en-AU">English</a><a href="start-zh.html" hreflang="zh-Hans">中文</a><a href="start-hi.html" hreflang="hi">हिन्दी</a><b>नेपाली</b><a href="start-es.html" hreflang="es">Español</a><a href="start-pt.html" hreflang="pt-BR">Português</a><a href="start-vi.html" hreflang="vi">Tiếng Việt</a><a href="start-id.html" hreflang="id">Bahasa Indonesia</a></nav>
+<div class="hero-s"><h1>यहाँबाट सुरु गर्नुहोस्: ८ सजिलो चरणमा Odo</h1><p>Odo ले तपाईंका डेलिभरी र राइडसेयर सिफ्ट, कामका लागि चलाएको किलोमिटर र कामका खर्चको हिसाब राख्छ। कर तिर्ने बेला तपाईंको एकाउन्टेन्ट वा myTax लाई चाहिने सबै कुरा दिन्छ। सेट गर्न करिब <b>५ मिनेट</b> लाग्छ।</p><p><a class="btn" href="./">Odo खोल्नुहोस् →</a></p></div>
+<div class="card"><h2>तपाईंलाई के चाहिन्छ</h2><ul class="need"><li>इन्टरनेट भएको फोन (iPhone वा Android)</li><li>एउटा इमेल ठेगाना</li><li>तपाईंको कारको ओडोमिटर रिडिङ (ड्यासबोर्डमा km भएको नम्बर)</li></ul><p style="margin-top:10px">App Store वा Google Play बाट केही डाउनलोड गर्नु पर्दैन। Odo एउटा लिंकबाट खुल्छ, अनि साधारण एप जस्तै होम स्क्रिनमा बस्छ। प्रयोग गर्न <b>निःशुल्क</b> छ।</p></div>
+<nav class="jump" aria-label="चरणहरू"><a href="#open">1. Odo को लिंक खोल्नुहोस्</a><a href="#home">2. Odo लाई होम स्क्रिनमा राख्नुहोस्</a><a href="#account">3. निःशुल्क खाता बनाउनुहोस्</a><a href="#setup">4. Odo लाई आफ्नो बारेमा बताउनुहोस् (१ मिनेट)</a><a href="#shift">5. हरेक सिफ्ट राख्नुहोस्</a><a href="#expense">6. कामका खर्च थप्नुहोस्</a><a href="#numbers">7. आफ्ना अंक हेर्नुहोस्</a><a href="#export">8. कर बुझाउने बेला: एक्सपोर्ट</a></nav>
+<section class="card step" id="open">
+<div class="sh"><span class="num">1</span><h2>Odo को लिंक खोल्नुहोस्</h2></div>
+<p>आफ्नो फोनमा <b>inova07.github.io/odo</b> खोल्नुहोस्।</p><p><b>iPhone:</b> <b>Safari</b> प्रयोग गर्नुहोस् (निलो कम्पास)। <b>Android:</b> <b>Chrome</b> वा <b>Samsung Internet</b> प्रयोग गर्नुहोस्।</p><p>छोटो स्वागत भ्रमण सुरु हुन्छ। पहिले आफ्नो <b>भाषा</b> छान्नुहोस्, अनि <b>देखाउनुहोस्</b> वा <b>छोड्नुहोस्</b> थिच्नुहोस्।</p>
+<p><a class="btn big" href="./">Odo खोल्नुहोस् →</a></p>
+
+
+
+<div class="shots one"><figure><img src="start/ne/1-welcome.webp" alt="पहिलो स्क्रिनमा आफ्नो भाषा छान्नुहोस्" loading="lazy" width="540" height="1169"><figcaption>पहिलो स्क्रिनमा आफ्नो भाषा छान्नुहोस्</figcaption></figure></div>
+
+
+</section>
+<section class="card step" id="home">
+<div class="sh"><span class="num">2</span><h2>Odo लाई होम स्क्रिनमा राख्नुहोस्</h2></div>
+<p>यो एक पटक मात्र गर्नुपर्छ। त्यसपछि Odo एक ट्यापमै पूरा स्क्रिनमा खुल्छ र सिग्नल नहुँदा पनि चल्छ।</p>
+
+<div class="plats"><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg></span><b>iPhone (Safari)</b></div><ol class="steps"><li><span>स्क्रिनको तल <b>Share</b> बटन थिच्नुहोस् (माथि तीर भएको वर्ग)।</span></li><li><span>तल स्क्रोल गरेर <b>Add to Home Screen</b> थिच्नुहोस्।</span></li><li><span>माथि दायाँ कुनामा <b>Add</b> थिच्नुहोस्।</span></li><li><span>अबदेखि Odo होम स्क्रिनको नयाँ <b>Od</b> आइकनबाट खोल्नुहोस्।</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg></span><b>Android (Chrome)</b></div><ol class="steps"><li><span><b>⋮</b> मेनु थिच्नुहोस् (माथि दायाँ तीन थोप्ला)।</span></li><li><span><b>Install app</b> वा <b>Add to Home screen</b> थिच्नुहोस्।</span></li><li><span><b>Install</b> वा <b>Add</b> थिच्नुहोस्।</span></li><li><span>होम स्क्रिनको नयाँ आइकनबाट Odo खोल्नुहोस्।</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span><b>Android (Samsung Internet)</b></div><ol class="steps"><li><span><b>≡</b> मेनु थिच्नुहोस् (तल दायाँ तीन लाइन)।</span></li><li><span><b>Add page to</b>, अनि <b>Home screen</b> थिच्नुहोस्।</span></li><li><span><b>Add</b> थिच्नुहोस्।</span></li><li><span>ठेगाना पट्टीमा सानो <b>install</b> आइकन देख्नुहुन्छ? त्यो थिच्दा पनि यही हुन्छ।</span></li></ol></div></div>
+
+
+
+
+<div class="note tip">💡 <b>बटन भेटिएन?</b> त्यसो भए Odo लाई बुकमार्क गर्नुहोस्। <b>iPhone:</b> Share → <b>Add Bookmark</b>। <b>Chrome:</b> ⋮ → <b>तारा</b> थिच्नुहोस्। <b>Samsung Internet:</b> ≡ → <b>Add page to</b> → <b>Bookmarks</b>।</div>
+</section>
+<section class="card step" id="account">
+<div class="sh"><span class="num">3</span><h2>निःशुल्क खाता बनाउनुहोस्</h2></div>
+<p>खाता नभए तपाईंका रेकर्ड यही फोनमा मात्र रहन्छन्। खाता भए Odo ले सबै ब्याकअप गर्छ, र नयाँ फोनमा साइन इन गरेर सबै फिर्ता पाउन सकिन्छ।</p>
+
+
+<ol class="steps"><li><span>माथि दायाँ <b>व्यक्ति आइकन</b> थिच्नुहोस्।</span></li><li><span><b>नयाँ खाता</b> थिच्नुहोस्।</span></li><li><span>आफ्नो <b>इमेल</b> लेख्नुहोस् र <b>पासवर्ड</b> बनाउनुहोस् (कम्तीमा ६ अक्षर)।</span></li><li><span><b>खाता बनाउनुहोस्</b> थिच्नुहोस्। Odo ले भने, Odo को इमेल खोलेर लिंक थिच्नुहोस्, अनि साइन इन गर्नुहोस्।</span></li></ol>
+
+<div class="shots"><figure><img src="start/ne/3a-account-icon.webp" alt="१. व्यक्ति आइकन थिच्नुहोस्" loading="lazy" width="540" height="1169"><figcaption>१. व्यक्ति आइकन थिच्नुहोस्</figcaption></figure><figure><img src="start/ne/3b-new-account.webp" alt="२. नयाँ खाता → खाता बनाउनुहोस्" loading="lazy" width="540" height="1169"><figcaption>२. नयाँ खाता → खाता बनाउनुहोस्</figcaption></figure></div>
+
+<div class="note tip">💡 <b>नयाँ फोन?</b> लिंक खोल्नुहोस्, व्यक्ति आइकन थिच्नुहोस्, <b>साइन इन</b> छान्नुहोस् र उही इमेल र पासवर्ड प्रयोग गर्नुहोस्। तपाईंका रेकर्ड फिर्ता आउँछन्। व्यक्ति आइकनमा <b>हरियो थोप्लो</b> भए ब्याकअप भएको छ।</div>
+</section>
+<section class="card step" id="setup">
+<div class="sh"><span class="num">4</span><h2>Odo लाई आफ्नो बारेमा बताउनुहोस् (१ मिनेट)</h2></div>
+
+
+
+<ol class="steps"><li><span><b>सेटिङ</b> खोल्न माथि दायाँ <b>गियर आइकन</b> थिच्नुहोस्।</span></li><li><span><b>तपाईंका सवारी:</b> कार, मोटरसाइकल वा साइकल छान्नुहोस्।</span></li><li><span><b>क्षेत्र:</b> <b>अस्ट्रेलिया</b> मै छोड्नुहोस्।</span></li><li><span><b>यो वर्षको अनुमानित कुल आय:</b> अर्को कुनै काम सहित यो वर्ष कमाउने सबैको मोटामोटी अनुमान। Odo ले यसबाट तपाईंको कर दर निकाल्छ।</span></li><li><span>तल <b>सेटिङ सेभ गर्नुहोस्</b> थिच्नुहोस्।</span></li></ol>
+
+<div class="shots"><figure><img src="start/ne/4a-gear.webp" alt="१. गियर आइकन थिच्नुहोस्" loading="lazy" width="540" height="1169"><figcaption>१. गियर आइकन थिच्नुहोस्</figcaption></figure><figure><img src="start/ne/4b-income.webp" alt="२. अनुमानित आय लेख्नुहोस्" loading="lazy" width="540" height="1169"><figcaption>२. अनुमानित आय लेख्नुहोस्</figcaption></figure></div>
+
+<div class="note tip">💡 <b>साइकल वा मोटरसाइकल चलाउनुहुन्छ?</b> Odo <b>राइडर मोड</b> मा जान्छ। km दर कारका लागि मात्र हो, त्यसैले तपाईंको दाबी खर्चबाट आउँछ: फोन, मर्मत, ब्याट्री, झोला र सामान।</div>
+</section>
+<section class="card step" id="shift">
+<div class="sh"><span class="num">5</span><h2>हरेक सिफ्ट राख्नुहोस्</h2></div>
+<p>किलोमिटर नै प्रायः तपाईंको सबैभन्दा ठूलो कर दाबी हो। हरेक सिफ्टमा दुई ट्याप मात्र।</p>
+
+
+<ol class="steps"><li><span><b>काम सुरु गर्दा:</b> <b>सिफ्ट सुरु गर्नुहोस्</b> थिच्नुहोस्, एप छान्नुहोस् (Uber, DoorDash…), <b>ओडोमिटर</b> नम्बर लेख्नुहोस्, <b>काम सुरु</b> थिच्नुहोस्। Odo बन्द गर्न सक्नुहुन्छ; टाइमर चलिरहन्छ।</span></li><li><span><b>काम सकेपछि:</b> <b>सिफ्ट अन्त्य गर्नुहोस्</b> थिच्नुहोस्, नयाँ ओडोमिटर नम्बर र <b>कमाइ</b> लेख्नुहोस्, अनि <b>सिफ्ट सेभ गर्नुहोस्</b> थिच्नुहोस्।</span></li></ol>
+
+<div class="shots"><figure><img src="start/ne/5a-start-button.webp" alt="१. सिफ्ट सुरु गर्नुहोस् थिच्नुहोस्" loading="lazy" width="540" height="1169"><figcaption>१. सिफ्ट सुरु गर्नुहोस् थिच्नुहोस्</figcaption></figure><figure><img src="start/ne/5b-clock-on.webp" alt="२. ओडोमिटर → काम सुरु" loading="lazy" width="540" height="1169"><figcaption>२. ओडोमिटर → काम सुरु</figcaption></figure><figure><img src="start/ne/5c-on-shift.webp" alt="३. काम सकेपछि: सिफ्ट अन्त्य" loading="lazy" width="540" height="1169"><figcaption>३. काम सकेपछि: सिफ्ट अन्त्य</figcaption></figure><figure><img src="start/ne/5d-end-shift.webp" alt="४. अन्तिम ओडोमिटर + कमाइ → सेभ" loading="lazy" width="540" height="1169"><figcaption>४. अन्तिम ओडोमिटर + कमाइ → सेभ</figcaption></figure></div>
+<div class="pro"><h3><span class="tag">PRO</span>ओडोमिटरको फोटो खिच्नुहोस्</h3><p><b>Odo Pro</b> मा, सिफ्ट सुरु गर्दा <b>सुरुको रिडिङ</b> थिचेर ओडोमिटरको फोटो खिच्नुहोस्, र सक्दा <b>अन्त्य</b> फोटो थप्नुहोस्। हरेक फोटो मिति र समयसहित सिफ्टमै सेभ हुन्छ र तपाईंको खातामा ब्याकअप हुन्छ।</p><p><b>यो किन महत्त्वपूर्ण छ:</b> ATO ले तपाईंले कामको किलोमिटर कसरी निकाल्नुभयो भनेर देखाउन भन्न सक्छ, र कर बुझाएपछि रेकर्ड <b>५ वर्ष</b> राख्नुपर्छ। हरेक सिफ्टको सुरु र अन्त्यको फोटो बलियो प्रमाण हो जसमाथि प्रश्न उठाउन गाह्रो हुन्छ। फोन फेर्दा पनि कुनै रिडिङ हराउँदैन वा गलत लेखिँदैन। कर बुझाउने बेला <b>एक्सपोर्ट → फोटो डाउनलोड</b> ले सबै फोटो एउटै ZIP मा तपाईंको कर एजेन्टलाई दिन्छ।</p><div class="shots one"><figure><img src="start/ne/5e-odo-photo.webp" alt="ओडोमिटर फोटो सिफ्टसँगै सेभ" loading="lazy" width="540" height="1169"><figcaption>ओडोमिटर फोटो सिफ्टसँगै सेभ</figcaption></figure></div></div>
+<div class="note tip">💡 <b>सुरु गर्न बिर्सनुभयो?</b> सिफ्ट ट्याब → <b>+ सिफ्ट</b> बाट पछि भर्नुहोस्। <b>हप्तामा भुक्तानी पाउनुहुन्छ?</b> सिफ्ट ट्याब → <b>+ हप्ता</b> र साप्ताहिक विवरणको कुल लेख्नुहोस्। <b>कामको</b> km मात्र गनिन्छ: घरबाट पहिलो काम सम्मको बाटो नगनिन सक्छ।</div>
+</section>
+<section class="card step" id="expense">
+<div class="sh"><span class="num">6</span><h2>कामका खर्च थप्नुहोस्</h2></div>
+
+
+
+<ol class="steps"><li><span><b>खर्च</b> ट्याबमा जानुहोस् र <b>खर्च थप्नुहोस्</b> थिच्नुहोस्।</span></li><li><span>एउटा <b>श्रेणी</b> छान्नुहोस् (जस्तै फोन र इन्टरनेट) र <b>रकम</b> लेख्नुहोस्।</span></li><li><span><b>कामका लागि प्रयोग</b> लाई कामका लागि जति हो त्यति सार्नुहोस्। फोन ७०% डेलिभरीमा प्रयोग हुन्छ? <b>७०%</b> राख्नुहोस्।</span></li><li><span><b>सेभ गर्नुहोस्</b> थिच्नुहोस्।</span></li></ol>
+
+<div class="shots one"><figure><img src="start/ne/6-expense.webp" alt="कामका लागि कति, सेट गर्नुहोस्" loading="lazy" width="540" height="1169"><figcaption>कामका लागि कति, सेट गर्नुहोस्</figcaption></figure></div>
+
+<div class="note warn">⚠️ <b>कार चलाउनुहुन्छ? इन्धन, रेगो, बीमा वा सर्भिसिङ नथप्नुहोस्।</b> ATO को km दर (२०२६–२७ मा प्रति km ९१ सेन्ट) मा यी पहिल्यै समावेश छन्। पार्किङ र टोल थप्न सकिन्छ।</div>
+</section>
+<section class="card step" id="numbers">
+<div class="sh"><span class="num">7</span><h2>आफ्ना अंक हेर्नुहोस्</h2></div>
+
+
+
+
+<table class="rows"><tr><th>तपाईंको कटौतीले बचाएको कर</th><td>कामको दाबीले गर्दा तपाईंले कति <b>कम कर</b> तिर्नुहुन्छ। यो फिर्ता होइन: एपहरूले तपाईंको कमाइबाट कर काट्दैनन्, त्यसैले प्रायः केही कर तिर्नैपर्छ।</td></tr><tr><th>आय / कटौती / खुद</th><td>तपाईंले कति कमाउनुभयो, कति दाबी गर्न सक्नुहुन्छ, र करिब नाफा।</td></tr><tr><th>हरेक हप्ता करिब $… छुट्याउनुहोस्</th><td>हरेक हप्ता यति बचाउनुहोस्, ताकि जुलाईमा करको बिलले झस्काउँदैन।</td></tr></table>
+<div class="shots one"><figure><img src="start/ne/7-home.webp" alt="पूरा वर्ष एकै नजरमा" loading="lazy" width="540" height="1169"><figcaption>पूरा वर्ष एकै नजरमा</figcaption></figure></div>
+
+<div class="note tip">💡 छोटो व्याख्याका लागि कुनै पनि <b>ⓘ</b> आइकन थिच्नुहोस्।</div>
+</section>
+<section class="card step" id="export">
+<div class="sh"><span class="num">8</span><h2>कर बुझाउने बेला: एक्सपोर्ट</h2></div>
+
+
+
+<ol class="steps"><li><span>जुन ३० पछि <b>एक्सपोर्ट</b> ट्याब खोल्नुहोस्।</span></li><li><span>आफ्ना <b>सिफ्ट</b>, <b>खर्च</b> र <b>सारांश</b> डाउनलोड गर्नुहोस्। यी Excel वा Google Sheets मा खुल्छन्।</span></li><li><span>यी आफ्नो कर एजेन्टलाई पठाउनुहोस्, वा myTax मा यिनका कुल प्रयोग गर्नुहोस्।</span></li></ol>
+
+<div class="shots one"><figure><img src="start/ne/8-export.webp" alt="एकाउन्टेन्टलाई चाहिने सबै" loading="lazy" width="540" height="1169"><figcaption>एकाउन्टेन्टलाई चाहिने सबै</figcaption></figure></div>
+
+<div class="note tip">💡 एक्सपोर्ट <b>वार्षिक Pro</b> सँग आउँछ, वा एक वर्षका लागि मात्र एक पटकको <b>ट्याक्स प्याक</b> (A$14.99) किन्नुहोस्। दुवै कामका खर्च हुन्, दाबी गर्न सकिन्छ।</div>
+</section>
+<div class="card"><h2>मद्दत चाहियो?</h2><ul class="need"><li><b>पूरा गाइड:</b> सेटिङ → <b>Odo कसरी प्रयोग गर्ने</b>, वा <a href="guide-ne.html">अनलाइन गाइड</a>।</li><li><b>प्रश्न छ?</b> सेटिङ → <b>मद्दत र सहयोग</b>। साइन इन गर्नुभएको छ भने हामी एपमै जवाफ दिन्छौं।</li></ul></div>
+<p class="sub" style="text-align:center">Odo रेकर्ड राख्ने उपकरण हो, कर सल्लाह होइन। हालका नियम ato.gov.au मा वा दर्ता भएको कर एजेन्टसँग पक्का गर्नुहोस्। · अपडेट: २०२६ नोभेम्बर १७</p>
+<footer><a href="./">Odo</a> · <a href="start-ne.html">यहाँबाट सुरु गर्नुहोस्</a> · <a href="guide-ne.html">प्रयोग गाइड</a> · <a href="terms.html">प्रयोगका सर्त</a> · <a href="privacy.html">गोपनीयता नीति</a></footer>
+</div>
+<script>
+(function(){var c=window.ODO_CONFIG||{};
+/* optional bits (like the ABN) simply disappear when not filled in */
+document.querySelectorAll("[data-optional]").forEach(function(el){if(!c[el.getAttribute("data-optional")])el.remove();});
+var L={BUSINESS_NAME:"[your business name]",ABN:"[your ABN]",SUPPORT_EMAIL:"[your support email]",BUSINESS_STATE:"[state]",PRIVACY_UPDATED:"[date]"};
+document.querySelectorAll("[data-cfg]").forEach(function(el){var k=el.getAttribute("data-cfg"),v=c[k];
+if(!v){el.textContent=L[k]||"["+k+"]";el.className="missing";return;}
+if(el.hasAttribute("data-mailto")){var a=document.createElement("a");a.href="mailto:"+v;a.textContent=v;el.replaceWith(a);}else el.textContent=v;});})();
+</script>
+</body>
+</html>

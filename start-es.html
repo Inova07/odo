@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Empieza aquí · Odo</title>
+<meta name="description" content="¿Nuevo en Odo? Configúralo en 5 minutos: abre el enlace, agrégalo a tu pantalla de inicio, crea una cuenta gratis y registra tu primer turno." />
+<meta name="theme-color" content="#141A2E" />
+<link rel="icon" type="image/png" href="favicon-32.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<script src="odo-config.js"></script>
+<style>:root{--bg:#0B0D10;--surface:#14171C;--ink:#F3F4F6;--soft:#9BA3AF;--line:#252A31;--amber:#C6F432;--amberSoft:rgba(198,244,50,.14);--goSoft:rgba(45,212,191,.14);--grad:linear-gradient(135deg,#C6F432,#2DD4BF);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Arimo,Arial,Helvetica,"Noto Sans Devanagari","PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.logo{font-weight:800;font-size:26px;letter-spacing:-.5px;color:var(--ink);text-decoration:none;display:inline-flex;align-items:baseline;gap:2px}
+.logo i{width:16px;height:16px;border-radius:4px;background:var(--grad);display:inline-block;position:relative;top:1px;margin-left:1px}
+.btn{background:var(--grad);color:#0B0D10;text-decoration:none;font-weight:800;font-size:14px;padding:10px 14px;border-radius:6px;white-space:nowrap}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px;letter-spacing:-.5px}
+.sub{color:var(--soft);margin:0 0 20px;font-size:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px 22px;margin-bottom:12px}
+h2{font-size:19px;margin:0 0 10px;scroll-margin-top:16px}
+h3{font-size:15.5px;margin:16px 0 6px}
+p,li{font-size:15px}
+p{margin:0 0 10px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin-bottom:5px}
+a{color:var(--amber)}
+.toc{columns:2;column-gap:24px;padding-left:20px}
+.toc li{break-inside:avoid}
+.note{border-radius:6px;padding:10px 14px;margin:0 0 12px;font-size:14px}
+.note.tip{background:var(--goSoft)} .note.warn{background:var(--amberSoft)}
+ol.steps{list-style:none;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;display:flex;gap:10px}
+ol.steps li:before{content:counter(s);flex:0 0 22px;height:22px;border-radius:50%;background:#262C35;color:var(--amber);font:700 12px/22px Arimo,Arial,sans-serif;text-align:center;margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 12px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--soft)}
+.missing{background:#4A1D1D;color:#FFB4B0;border-radius:4px;padding:0 4px}
+footer{color:var(--soft);font-size:13px;text-align:center;margin-top:24px}
+@media (max-width:560px){.toc{columns:1}h1{font-size:25px}.card{padding:18px}table{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="./">Od<i></i></a><a class="btn" href="./">Abrir Odo</a></header>
+<style>
+.hero-s{background:var(--grad);color:#0B0D10;border-radius:6px;padding:22px 20px;margin:4px 0 14px}
+.hero-s h1{color:#0B0D10;margin:0 0 8px;font-size:26px;line-height:1.25}
+.hero-s p{margin:0 0 10px;color:rgba(11,13,16,.85)}.hero-s b{color:#0B0D10}
+.hero-s .btn{background:#0B0D10;color:#C6F432;display:inline-block}
+.need{margin:0;padding-left:20px}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.jump a{font-size:13px;text-decoration:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:4px;padding:6px 10px}
+.step .sh{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.step .sh h2{margin:0}
+.num{flex:0 0 34px;height:34px;border-radius:6px;background:var(--grad);color:#0B0D10;font-weight:800;font-size:17px;display:grid;place-items:center}
+.btn.big{display:inline-block;font-size:16px;padding:12px 18px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 12px}
+.shots.one{grid-template-columns:minmax(0,260px);justify-content:center}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line);background:#000}
+.shots figcaption{font-size:13px;color:var(--soft);text-align:center;margin-top:6px;line-height:1.35}
+.plats{display:grid;gap:12px;margin:10px 0}
+.plat{border:1px solid var(--line);border-radius:6px;padding:12px 14px;background:rgba(255,255,255,.02)}
+.plat .ph{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.plat .ico{width:34px;height:34px;border-radius:6px;background:#262C35;color:var(--amber);display:grid;place-items:center;flex:0 0 34px}
+.pro{border:1px solid rgba(198,244,50,.45);background:rgba(198,244,50,.06);border-radius:6px;padding:14px 16px;margin:12px 0}
+.pro h3{margin:0 0 6px;font-size:16px;display:flex;align-items:center;gap:8px}
+.pro .tag{background:var(--grad);color:#0B0D10;font-size:11px;font-weight:800;border-radius:4px;padding:2px 7px}
+.pro p{margin:0 0 10px}
+table.rows{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+table.rows th,table.rows td{text-align:left;vertical-align:top;padding:9px 6px;border-top:1px solid var(--line)}
+table.rows th{width:38%;color:var(--ink);font-weight:700;text-transform:none;letter-spacing:0;font-size:14px}
+table.rows td{color:var(--soft)}
+@media (min-width:640px){.plats{grid-template-columns:1fr 1fr 1fr}.shots{grid-template-columns:repeat(4,1fr)}.shots.one{grid-template-columns:minmax(0,240px)}}
+</style>
+<nav class="langs" style="display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px;margin:4px 0 14px"><a href="start.html" hreflang="en-AU">English</a><a href="start-zh.html" hreflang="zh-Hans">中文</a><a href="start-hi.html" hreflang="hi">हिन्दी</a><a href="start-ne.html" hreflang="ne">नेपाली</a><b>Español</b><a href="start-pt.html" hreflang="pt-BR">Português</a><a href="start-vi.html" hreflang="vi">Tiếng Việt</a><a href="start-id.html" hreflang="id">Bahasa Indonesia</a></nav>
+<div class="hero-s"><h1>Empieza aquí: Odo en 8 pasos fáciles</h1><p>Odo lleva el registro de tus turnos de reparto y de viajes, los kilómetros que manejas por trabajo y tus gastos de trabajo. A la hora de declarar, te da todo lo que necesita tu contador o myTax. Configurarlo toma unos <b>5 minutos</b>.</p><p><a class="btn" href="./">Abrir Odo →</a></p></div>
+<div class="card"><h2>Lo que necesitas</h2><ul class="need"><li>Un celular (iPhone o Android) con internet</li><li>Un correo electrónico</li><li>La lectura del odómetro de tu auto (el número de km en el tablero)</li></ul><p style="margin-top:10px">No tienes que descargar nada de la App Store ni de Google Play. Odo se abre desde un enlace y luego queda en tu pantalla de inicio como una app normal. Es <b>gratis</b>.</p></div>
+<nav class="jump" aria-label="Pasos"><a href="#open">1. Abre el enlace de Odo</a><a href="#home">2. Pon Odo en tu pantalla de inicio</a><a href="#account">3. Crea una cuenta gratis</a><a href="#setup">4. Cuéntale a Odo sobre ti (1 minuto)</a><a href="#shift">5. Registra cada turno</a><a href="#expense">6. Agrega tus gastos de trabajo</a><a href="#numbers">7. Revisa tus números</a><a href="#export">8. A la hora de declarar: exporta</a></nav>
+<section class="card step" id="open">
+<div class="sh"><span class="num">1</span><h2>Abre el enlace de Odo</h2></div>
+<p>En tu celular, abre <b>inova07.github.io/odo</b>.</p><p><b>iPhone:</b> usa <b>Safari</b> (la brújula azul). <b>Android:</b> usa <b>Chrome</b> o <b>Samsung Internet</b>.</p><p>Empieza un recorrido de bienvenida corto. Primero elige tu <b>idioma</b> y luego toca <b>Muéstrame</b> u <b>Omitir</b>.</p>
+<p><a class="btn big" href="./">Abrir Odo →</a></p>
+
+
+
+<div class="shots one"><figure><img src="start/es/1-welcome.webp" alt="Elige tu idioma en la primera pantalla" loading="lazy" width="540" height="1169"><figcaption>Elige tu idioma en la primera pantalla</figcaption></figure></div>
+
+
+</section>
+<section class="card step" id="home">
+<div class="sh"><span class="num">2</span><h2>Pon Odo en tu pantalla de inicio</h2></div>
+<p>Hazlo una sola vez. Después, Odo se abre con un toque, en pantalla completa, y funciona sin señal.</p>
+
+<div class="plats"><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg></span><b>iPhone (Safari)</b></div><ol class="steps"><li><span>Toca el botón <b>Compartir</b> abajo en la pantalla (un cuadro con una flecha hacia arriba).</span></li><li><span>Desliza hacia abajo y toca <b>Agregar a inicio</b>.</span></li><li><span>Toca <b>Agregar</b> arriba a la derecha.</span></li><li><span>De ahora en adelante, abre Odo desde el nuevo ícono <b>Od</b> en tu pantalla de inicio.</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg></span><b>Android (Chrome)</b></div><ol class="steps"><li><span>Toca el menú <b>⋮</b> (tres puntos, arriba a la derecha).</span></li><li><span>Toca <b>Instalar app</b> o <b>Agregar a la pantalla principal</b>.</span></li><li><span>Toca <b>Instalar</b> o <b>Agregar</b>.</span></li><li><span>Abre Odo desde el nuevo ícono en tu pantalla de inicio.</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span><b>Android (Samsung Internet)</b></div><ol class="steps"><li><span>Toca el menú <b>≡</b> (tres líneas, abajo a la derecha).</span></li><li><span>Toca <b>Añadir página a</b> y luego <b>Pantalla de inicio</b>.</span></li><li><span>Toca <b>Añadir</b>.</span></li><li><span>¿Ves un pequeño ícono de <b>instalar</b> en la barra de direcciones? Tocarlo hace lo mismo.</span></li></ol></div></div>
+
+
+
+
+<div class="note tip">💡 <b>¿No encuentras el botón?</b> Guarda Odo como marcador. <b>iPhone:</b> Compartir → <b>Agregar marcador</b>. <b>Chrome:</b> ⋮ → toca la <b>estrella</b>. <b>Samsung Internet:</b> ≡ → <b>Añadir página a</b> → <b>Favoritos</b>.</div>
+</section>
+<section class="card step" id="account">
+<div class="sh"><span class="num">3</span><h2>Crea una cuenta gratis</h2></div>
+<p>Sin cuenta, tus registros viven solo en este celular. Con una, Odo respalda todo y puedes iniciar sesión en un celular nuevo y recuperarlo.</p>
+
+
+<ol class="steps"><li><span>Toca el <b>ícono de persona</b> arriba a la derecha.</span></li><li><span>Toca <b>Cuenta nueva</b>.</span></li><li><span>Escribe tu <b>correo</b> y crea una <b>contraseña</b> (al menos 6 caracteres).</span></li><li><span>Toca <b>Crear cuenta</b>. Si Odo te lo pide, abre el correo de Odo y toca el enlace para confirmar, y luego inicia sesión.</span></li></ol>
+
+<div class="shots"><figure><img src="start/es/3a-account-icon.webp" alt="1. Toca el ícono de persona" loading="lazy" width="540" height="1169"><figcaption>1. Toca el ícono de persona</figcaption></figure><figure><img src="start/es/3b-new-account.webp" alt="2. Cuenta nueva → Crear cuenta" loading="lazy" width="540" height="1169"><figcaption>2. Cuenta nueva → Crear cuenta</figcaption></figure></div>
+
+<div class="note tip">💡 <b>¿Celular nuevo?</b> Abre el enlace, toca el ícono de persona, elige <b>Iniciar sesión</b> y usa el mismo correo y contraseña. Tus registros vuelven. Un <b>punto verde</b> en el ícono de persona significa que está respaldado.</div>
+</section>
+<section class="card step" id="setup">
+<div class="sh"><span class="num">4</span><h2>Cuéntale a Odo sobre ti (1 minuto)</h2></div>
+
+
+
+<ol class="steps"><li><span>Toca el <b>ícono de engranaje</b> arriba a la derecha para abrir <b>Ajustes</b>.</span></li><li><span><b>Tus vehículos:</b> elige Auto, Moto o Bici.</span></li><li><span><b>Región:</b> déjala en <b>Australia</b>.</span></li><li><span><b>Ingresos totales esperados este año:</b> un cálculo aproximado de todo lo que ganarás, incluido cualquier otro trabajo. Odo lo usa para calcular tu tasa de impuesto.</span></li><li><span>Toca <b>Guardar ajustes</b> abajo.</span></li></ol>
+
+<div class="shots"><figure><img src="start/es/4a-gear.webp" alt="1. Toca el engranaje" loading="lazy" width="540" height="1169"><figcaption>1. Toca el engranaje</figcaption></figure><figure><img src="start/es/4b-income.webp" alt="2. Escribe tus ingresos esperados" loading="lazy" width="540" height="1169"><figcaption>2. Escribe tus ingresos esperados</figcaption></figure></div>
+
+<div class="note tip">💡 <b>¿Andas en bici o moto?</b> Odo cambia al <b>Modo repartidor</b>. La tarifa por km es solo para autos, así que tu deducción viene de tus gastos: celular, reparaciones, baterías, mochilas y equipo.</div>
+</section>
+<section class="card step" id="shift">
+<div class="sh"><span class="num">5</span><h2>Registra cada turno</h2></div>
+<p>Tus kilómetros suelen ser tu mayor deducción. Solo son dos toques por turno.</p>
+
+
+<ol class="steps"><li><span><b>Al empezar:</b> toca <b>Iniciar turno</b>, elige la app (Uber, DoorDash…), escribe el número del <b>odómetro</b> y toca <b>Empezar</b>. Puedes cerrar Odo; el temporizador sigue.</span></li><li><span><b>Al terminar:</b> toca <b>Terminar turno</b>, escribe el nuevo número del odómetro y cuánto <b>ganaste</b>, y toca <b>Guardar turno</b>.</span></li></ol>
+
+<div class="shots"><figure><img src="start/es/5a-start-button.webp" alt="1. Toca Iniciar turno" loading="lazy" width="540" height="1169"><figcaption>1. Toca Iniciar turno</figcaption></figure><figure><img src="start/es/5b-clock-on.webp" alt="2. Odómetro → Empezar" loading="lazy" width="540" height="1169"><figcaption>2. Odómetro → Empezar</figcaption></figure><figure><img src="start/es/5c-on-shift.webp" alt="3. Después: Terminar turno" loading="lazy" width="540" height="1169"><figcaption>3. Después: Terminar turno</figcaption></figure><figure><img src="start/es/5d-end-shift.webp" alt="4. Odómetro final + ganancias → Guardar" loading="lazy" width="540" height="1169"><figcaption>4. Odómetro final + ganancias → Guardar</figcaption></figure></div>
+<div class="pro"><h3><span class="tag">PRO</span>Tómale foto a tu odómetro</h3><p>Con <b>Odo Pro</b>, toca <b>Lectura inicial</b> al empezar un turno para tomarle foto al odómetro, y agrega una foto de <b>Fin</b> al terminar. Cada foto se guarda con el turno, con fecha y hora, y se respalda en tu cuenta.</p><p><b>Por qué importa:</b> la ATO puede pedirte que muestres cómo calculaste tus kilómetros de trabajo, y debes guardar tus registros <b>5 años</b> después de declarar. Una foto al inicio y al final de cada turno es una prueba sólida y difícil de discutir. Además, nunca pierdes ni escribes mal una lectura, aunque cambies de celular. A la hora de declarar, <b>Exportar → Descargar fotos</b> le da a tu agente fiscal todas las fotos en un solo ZIP.</p><div class="shots one"><figure><img src="start/es/5e-odo-photo.webp" alt="La foto del odómetro, guardada con el turno" loading="lazy" width="540" height="1169"><figcaption>La foto del odómetro, guardada con el turno</figcaption></figure></div></div>
+<div class="note tip">💡 <b>¿Olvidaste empezar?</b> Pestaña Turnos → <b>+ Turno</b> y escríbelo después. <b>¿Te pagan por semana?</b> Pestaña Turnos → <b>+ Semana</b> y copia el total de tu resumen semanal. Solo cuentan los km de <b>trabajo</b>: el viaje de tu casa al primer pedido puede no contar.</div>
+</section>
+<section class="card step" id="expense">
+<div class="sh"><span class="num">6</span><h2>Agrega tus gastos de trabajo</h2></div>
+
+
+
+<ol class="steps"><li><span>Ve a la pestaña <b>Gastos</b> y toca <b>Agregar gasto</b>.</span></li><li><span>Elige una <b>categoría</b> (por ejemplo Celular e internet) y escribe el <b>monto</b>.</span></li><li><span>Mueve <b>Uso laboral</b> a cuánto es para trabajo. ¿Usas el celular 70% para repartir? Pon <b>70%</b>.</span></li><li><span>Toca <b>Guardar</b>.</span></li></ol>
+
+<div class="shots one"><figure><img src="start/es/6-expense.webp" alt="Indica cuánto es para trabajo" loading="lazy" width="540" height="1169"><figcaption>Indica cuánto es para trabajo</figcaption></figure></div>
+
+<div class="note warn">⚠️ <b>¿Manejas un auto? No agregues combustible, rego, seguro ni mantenimiento.</b> La tarifa por km de la ATO (91c por km en 2026–27) ya los incluye. El estacionamiento y los peajes sí puedes agregarlos.</div>
+</section>
+<section class="card step" id="numbers">
+<div class="sh"><span class="num">7</span><h2>Revisa tus números</h2></div>
+
+
+
+
+<table class="rows"><tr><th>Impuesto ahorrado con tus deducciones</th><td>Cuánto <b>menos impuesto</b> pagarás gracias a tus deducciones de trabajo. No es un reembolso: las apps no retienen impuestos de tu pago, así que normalmente igual deberás algo.</td></tr><tr><th>Ingresos / Deducciones / Neto</th><td>Lo que ganaste, lo que puedes deducir y, más o menos, tu ganancia.</td></tr><tr><th>Aparta unos $… por semana</th><td>Ahorra eso cada semana para que la cuenta de impuestos de julio no te tome por sorpresa.</td></tr></table>
+<div class="shots one"><figure><img src="start/es/7-home.webp" alt="Tu año de un vistazo" loading="lazy" width="540" height="1169"><figcaption>Tu año de un vistazo</figcaption></figure></div>
+
+<div class="note tip">💡 Toca cualquier ícono <b>ⓘ</b> para una explicación rápida.</div>
+</section>
+<section class="card step" id="export">
+<div class="sh"><span class="num">8</span><h2>A la hora de declarar: exporta</h2></div>
+
+
+
+<ol class="steps"><li><span>Después del 30 de junio, abre la pestaña <b>Exportar</b>.</span></li><li><span>Descarga tus <b>turnos</b>, <b>gastos</b> y el <b>resumen</b>. Se abren en Excel o Google Sheets.</span></li><li><span>Envíalos a tu agente fiscal o usa los totales en myTax.</span></li></ol>
+
+<div class="shots one"><figure><img src="start/es/8-export.webp" alt="Todo lo que necesita tu contador" loading="lazy" width="540" height="1169"><figcaption>Todo lo que necesita tu contador</figcaption></figure></div>
+
+<div class="note tip">💡 Las exportaciones vienen con <b>Pro anual</b>, o compra un <b>Paquete fiscal</b> de pago único (A$14.99) para un solo año. Ambos son gastos de trabajo que puedes deducir.</div>
+</section>
+<div class="card"><h2>¿Necesitas ayuda?</h2><ul class="need"><li><b>Guía completa:</b> Ajustes → <b>Cómo usar Odo</b>, o la <a href="guide-es.html">guía en línea</a>.</li><li><b>¿Preguntas?</b> Ajustes → <b>Ayuda y soporte</b>. Si iniciaste sesión, te respondemos ahí mismo en la app.</li></ul></div>
+<p class="sub" style="text-align:center">Odo es una herramienta para llevar registros, no asesoría fiscal. Confirma las reglas actuales en ato.gov.au o con un agente fiscal registrado. · Actualizado el 17 de noviembre de 2026</p>
+<footer><a href="./">Odo</a> · <a href="start-es.html">Empieza aquí</a> · <a href="guide-es.html">Guía de uso</a> · <a href="terms.html">Términos de uso</a> · <a href="privacy.html">Política de privacidad</a></footer>
+</div>
+<script>
+(function(){var c=window.ODO_CONFIG||{};
+/* optional bits (like the ABN) simply disappear when not filled in */
+document.querySelectorAll("[data-optional]").forEach(function(el){if(!c[el.getAttribute("data-optional")])el.remove();});
+var L={BUSINESS_NAME:"[your business name]",ABN:"[your ABN]",SUPPORT_EMAIL:"[your support email]",BUSINESS_STATE:"[state]",PRIVACY_UPDATED:"[date]"};
+document.querySelectorAll("[data-cfg]").forEach(function(el){var k=el.getAttribute("data-cfg"),v=c[k];
+if(!v){el.textContent=L[k]||"["+k+"]";el.className="missing";return;}
+if(el.hasAttribute("data-mailto")){var a=document.createElement("a");a.href="mailto:"+v;a.textContent=v;el.replaceWith(a);}else el.textContent=v;});})();
+</script>
+</body>
+</html>

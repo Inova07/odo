@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Start here · Odo</title>
+<meta name="description" content="New to Odo? Set it up in 5 minutes: open the link, add it to your home screen, create a free account and log your first shift." />
+<meta name="theme-color" content="#141A2E" />
+<link rel="icon" type="image/png" href="favicon-32.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<script src="odo-config.js"></script>
+<style>:root{--bg:#0B0D10;--surface:#14171C;--ink:#F3F4F6;--soft:#9BA3AF;--line:#252A31;--amber:#C6F432;--amberSoft:rgba(198,244,50,.14);--goSoft:rgba(45,212,191,.14);--grad:linear-gradient(135deg,#C6F432,#2DD4BF);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Arimo,Arial,Helvetica,"Noto Sans Devanagari","PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.logo{font-weight:800;font-size:26px;letter-spacing:-.5px;color:var(--ink);text-decoration:none;display:inline-flex;align-items:baseline;gap:2px}
+.logo i{width:16px;height:16px;border-radius:4px;background:var(--grad);display:inline-block;position:relative;top:1px;margin-left:1px}
+.btn{background:var(--grad);color:#0B0D10;text-decoration:none;font-weight:800;font-size:14px;padding:10px 14px;border-radius:6px;white-space:nowrap}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px;letter-spacing:-.5px}
+.sub{color:var(--soft);margin:0 0 20px;font-size:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px 22px;margin-bottom:12px}
+h2{font-size:19px;margin:0 0 10px;scroll-margin-top:16px}
+h3{font-size:15.5px;margin:16px 0 6px}
+p,li{font-size:15px}
+p{margin:0 0 10px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin-bottom:5px}
+a{color:var(--amber)}
+.toc{columns:2;column-gap:24px;padding-left:20px}
+.toc li{break-inside:avoid}
+.note{border-radius:6px;padding:10px 14px;margin:0 0 12px;font-size:14px}
+.note.tip{background:var(--goSoft)} .note.warn{background:var(--amberSoft)}
+ol.steps{list-style:none;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;display:flex;gap:10px}
+ol.steps li:before{content:counter(s);flex:0 0 22px;height:22px;border-radius:50%;background:#262C35;color:var(--amber);font:700 12px/22px Arimo,Arial,sans-serif;text-align:center;margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 12px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--soft)}
+.missing{background:#4A1D1D;color:#FFB4B0;border-radius:4px;padding:0 4px}
+footer{color:var(--soft);font-size:13px;text-align:center;margin-top:24px}
+@media (max-width:560px){.toc{columns:1}h1{font-size:25px}.card{padding:18px}table{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="./">Od<i></i></a><a class="btn" href="./">Open Odo</a></header>
+<style>
+.hero-s{background:var(--grad);color:#0B0D10;border-radius:6px;padding:22px 20px;margin:4px 0 14px}
+.hero-s h1{color:#0B0D10;margin:0 0 8px;font-size:26px;line-height:1.25}
+.hero-s p{margin:0 0 10px;color:rgba(11,13,16,.85)}.hero-s b{color:#0B0D10}
+.hero-s .btn{background:#0B0D10;color:#C6F432;display:inline-block}
+.need{margin:0;padding-left:20px}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.jump a{font-size:13px;text-decoration:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:4px;padding:6px 10px}
+.step .sh{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.step .sh h2{margin:0}
+.num{flex:0 0 34px;height:34px;border-radius:6px;background:var(--grad);color:#0B0D10;font-weight:800;font-size:17px;display:grid;place-items:center}
+.btn.big{display:inline-block;font-size:16px;padding:12px 18px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 12px}
+.shots.one{grid-template-columns:minmax(0,260px);justify-content:center}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line);background:#000}
+.shots figcaption{font-size:13px;color:var(--soft);text-align:center;margin-top:6px;line-height:1.35}
+.plats{display:grid;gap:12px;margin:10px 0}
+.plat{border:1px solid var(--line);border-radius:6px;padding:12px 14px;background:rgba(255,255,255,.02)}
+.plat .ph{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.plat .ico{width:34px;height:34px;border-radius:6px;background:#262C35;color:var(--amber);display:grid;place-items:center;flex:0 0 34px}
+.pro{border:1px solid rgba(198,244,50,.45);background:rgba(198,244,50,.06);border-radius:6px;padding:14px 16px;margin:12px 0}
+.pro h3{margin:0 0 6px;font-size:16px;display:flex;align-items:center;gap:8px}
+.pro .tag{background:var(--grad);color:#0B0D10;font-size:11px;font-weight:800;border-radius:4px;padding:2px 7px}
+.pro p{margin:0 0 10px}
+table.rows{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+table.rows th,table.rows td{text-align:left;vertical-align:top;padding:9px 6px;border-top:1px solid var(--line)}
+table.rows th{width:38%;color:var(--ink);font-weight:700;text-transform:none;letter-spacing:0;font-size:14px}
+table.rows td{color:var(--soft)}
+@media (min-width:640px){.plats{grid-template-columns:1fr 1fr 1fr}.shots{grid-template-columns:repeat(4,1fr)}.shots.one{grid-template-columns:minmax(0,240px)}}
+</style>
+<nav class="langs" style="display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px;margin:4px 0 14px"><b>English</b><a href="start-zh.html" hreflang="zh-Hans">中文</a><a href="start-hi.html" hreflang="hi">हिन्दी</a><a href="start-ne.html" hreflang="ne">नेपाली</a><a href="start-es.html" hreflang="es">Español</a><a href="start-pt.html" hreflang="pt-BR">Português</a><a href="start-vi.html" hreflang="vi">Tiếng Việt</a><a href="start-id.html" hreflang="id">Bahasa Indonesia</a></nav>
+<div class="hero-s"><h1>Start here: Odo in 8 easy steps</h1><p>Odo keeps track of your delivery and rideshare shifts, the kilometres you drive and your work costs. At tax time it gives you everything your accountant or myTax needs. Setting it up takes about <b>5 minutes</b>.</p><p><a class="btn" href="./">Open Odo →</a></p></div>
+<div class="card"><h2>What you need</h2><ul class="need"><li>A phone (iPhone or Android) with internet</li><li>An email address</li><li>Your car's odometer reading (the km number on your dashboard)</li></ul><p style="margin-top:10px">There's nothing to download from the App Store or Google Play. Odo opens from a link and then sits on your home screen like a normal app. It's <b>free</b> to use.</p></div>
+<nav class="jump" aria-label="Steps"><a href="#open">1. Open the Odo link</a><a href="#home">2. Put Odo on your home screen</a><a href="#account">3. Create a free account</a><a href="#setup">4. Tell Odo about you (1 minute)</a><a href="#shift">5. Log every shift</a><a href="#expense">6. Add your work costs</a><a href="#numbers">7. Check your numbers</a><a href="#export">8. At tax time: export</a></nav>
+<section class="card step" id="open">
+<div class="sh"><span class="num">1</span><h2>Open the Odo link</h2></div>
+<p>On your phone, open <b>inova07.github.io/odo</b>.</p><p><b>iPhone:</b> use <b>Safari</b> (the blue compass). <b>Android:</b> use <b>Chrome</b> or <b>Samsung Internet</b>.</p><p>A short welcome tour starts. Pick your <b>language</b> first, then tap <b>Show me</b> or <b>Skip</b>.</p>
+<p><a class="btn big" href="./">Open Odo →</a></p>
+
+
+
+<div class="shots one"><figure><img src="start/en/1-welcome.webp" alt="Pick your language on the first screen" loading="lazy" width="540" height="1169"><figcaption>Pick your language on the first screen</figcaption></figure></div>
+
+
+</section>
+<section class="card step" id="home">
+<div class="sh"><span class="num">2</span><h2>Put Odo on your home screen</h2></div>
+<p>Do this once. After that, Odo opens with one tap, full screen, and works without signal.</p>
+
+<div class="plats"><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg></span><b>iPhone (Safari)</b></div><ol class="steps"><li><span>Tap the <b>Share</b> button at the bottom of the screen (a square with an arrow pointing up).</span></li><li><span>Scroll down and tap <b>Add to Home Screen</b>.</span></li><li><span>Tap <b>Add</b> in the top right corner.</span></li><li><span>Open Odo from the new <b>Od</b> icon on your home screen from now on.</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg></span><b>Android (Chrome)</b></div><ol class="steps"><li><span>Tap the <b>⋮</b> menu (three dots, top right).</span></li><li><span>Tap <b>Install app</b> or <b>Add to Home screen</b>.</span></li><li><span>Tap <b>Install</b> or <b>Add</b>.</span></li><li><span>Open Odo from the new icon on your home screen.</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span><b>Android (Samsung Internet)</b></div><ol class="steps"><li><span>Tap the <b>≡</b> menu (three lines, bottom right).</span></li><li><span>Tap <b>Add page to</b>, then <b>Home screen</b>.</span></li><li><span>Tap <b>Add</b>.</span></li><li><span>See a small <b>install</b> icon in the address bar? Tapping it does the same thing.</span></li></ol></div></div>
+
+
+
+
+<div class="note tip">💡 <b>Can't find the button?</b> Save Odo as a bookmark instead. <b>iPhone:</b> Share → <b>Add Bookmark</b>. <b>Chrome:</b> ⋮ → tap the <b>star</b>. <b>Samsung Internet:</b> ≡ → <b>Add page to</b> → <b>Bookmarks</b>.</div>
+</section>
+<section class="card step" id="account">
+<div class="sh"><span class="num">3</span><h2>Create a free account</h2></div>
+<p>Without an account, your records live only on this phone. With one, Odo backs everything up, and you can sign in on a new phone and get it all back.</p>
+
+
+<ol class="steps"><li><span>Tap the <b>person icon</b> at the top right.</span></li><li><span>Tap <b>New account</b>.</span></li><li><span>Type your <b>email</b> and make a <b>password</b> (at least 6 characters).</span></li><li><span>Tap <b>Create account</b>. If Odo asks, open the email from Odo and tap the link to confirm, then sign in.</span></li></ol>
+
+<div class="shots"><figure><img src="start/en/3a-account-icon.webp" alt="1. Tap the person icon" loading="lazy" width="540" height="1169"><figcaption>1. Tap the person icon</figcaption></figure><figure><img src="start/en/3b-new-account.webp" alt="2. New account → Create account" loading="lazy" width="540" height="1169"><figcaption>2. New account → Create account</figcaption></figure></div>
+
+<div class="note tip">💡 <b>New phone?</b> Open the link, tap the person icon, choose <b>Sign in</b> and use the same email and password. Your records come back. A <b>green dot</b> on the person icon means you're backed up.</div>
+</section>
+<section class="card step" id="setup">
+<div class="sh"><span class="num">4</span><h2>Tell Odo about you (1 minute)</h2></div>
+
+
+
+<ol class="steps"><li><span>Tap the <b>gear icon</b> at the top right to open <b>Settings</b>.</span></li><li><span><b>Your vehicles:</b> choose Car, Motorbike or Bicycle.</span></li><li><span><b>Region:</b> leave it on <b>Australia</b>.</span></li><li><span><b>Expected total income this year:</b> a rough guess of everything you'll earn, including any other job. Odo uses it to work out your tax rate.</span></li><li><span>Tap <b>Save settings</b> at the bottom.</span></li></ol>
+
+<div class="shots"><figure><img src="start/en/4a-gear.webp" alt="1. Tap the gear icon" loading="lazy" width="540" height="1169"><figcaption>1. Tap the gear icon</figcaption></figure><figure><img src="start/en/4b-income.webp" alt="2. Add your expected income" loading="lazy" width="540" height="1169"><figcaption>2. Add your expected income</figcaption></figure></div>
+
+<div class="note tip">💡 <b>On a bike or motorbike?</b> Odo switches to <b>Rider mode</b>. The km rate is only for cars, so your claim comes from your costs: phone, repairs, batteries, bags and gear.</div>
+</section>
+<section class="card step" id="shift">
+<div class="sh"><span class="num">5</span><h2>Log every shift</h2></div>
+<p>Your kilometres are usually your biggest tax claim. Two taps per shift is all it takes.</p>
+
+
+<ol class="steps"><li><span><b>Starting work:</b> tap <b>Start shift</b>, pick the app (Uber, DoorDash…), type your <b>odometer</b> number, tap <b>Clock on</b>. You can close Odo; the timer keeps going.</span></li><li><span><b>Finished:</b> tap <b>End shift</b>, type the new odometer number and what you <b>earned</b>, then tap <b>Save shift</b>.</span></li></ol>
+
+<div class="shots"><figure><img src="start/en/5a-start-button.webp" alt="1. Tap Start shift" loading="lazy" width="540" height="1169"><figcaption>1. Tap Start shift</figcaption></figure><figure><img src="start/en/5b-clock-on.webp" alt="2. Odometer → Clock on" loading="lazy" width="540" height="1169"><figcaption>2. Odometer → Clock on</figcaption></figure><figure><img src="start/en/5c-on-shift.webp" alt="3. After work: End shift" loading="lazy" width="540" height="1169"><figcaption>3. After work: End shift</figcaption></figure><figure><img src="start/en/5d-end-shift.webp" alt="4. End odometer + earnings → Save" loading="lazy" width="540" height="1169"><figcaption>4. End odometer + earnings → Save</figcaption></figure></div>
+<div class="pro"><h3><span class="tag">PRO</span>Photograph your odometer</h3><p>With <b>Odo Pro</b>, tap <b>Start reading</b> when you start a shift to snap your odometer, and add an <b>End</b> photo when you finish. Each photo is saved with the shift, with the date and time, and backed up to your account.</p><p><b>Why this matters:</b> the ATO can ask you to show how you worked out your work kilometres, and you must keep your records for <b>5 years</b> after you lodge. A photo from the start and end of every shift is strong proof that's hard to argue with. You'll also never lose or mistype a reading, even if you change phones. At tax time, <b>Export → Download photos</b> gives your tax agent every photo in one ZIP.</p><div class="shots one"><figure><img src="start/en/5e-odo-photo.webp" alt="Your odometer photo, saved with the shift" loading="lazy" width="540" height="1169"><figcaption>Your odometer photo, saved with the shift</figcaption></figure></div></div>
+<div class="note tip">💡 <b>Forgot to start?</b> Shifts tab → <b>+ Shift</b> and type it in afterwards. <b>Paid weekly?</b> Shifts tab → <b>+ Week</b> and copy the total from your weekly statement. Only <b>work</b> km count: the drive from home to your first job may not.</div>
+</section>
+<section class="card step" id="expense">
+<div class="sh"><span class="num">6</span><h2>Add your work costs</h2></div>
+
+
+
+<ol class="steps"><li><span>Go to the <b>Expenses</b> tab and tap <b>Add expense</b>.</span></li><li><span>Pick a <b>category</b> (for example Phone &amp; internet) and type the <b>amount</b>.</span></li><li><span>Slide <b>Business use</b> to how much is for work. Phone used 70% for deliveries? Set <b>70%</b>.</span></li><li><span>Tap <b>Save</b>.</span></li></ol>
+
+<div class="shots one"><figure><img src="start/en/6-expense.webp" alt="Set how much is for work" loading="lazy" width="540" height="1169"><figcaption>Set how much is for work</figcaption></figure></div>
+
+<div class="note warn">⚠️ <b>Driving a car? Don't add fuel, rego, insurance or servicing.</b> The ATO km rate (91c per km in 2026–27) already covers them. Parking and tolls are fine to add.</div>
+</section>
+<section class="card step" id="numbers">
+<div class="sh"><span class="num">7</span><h2>Check your numbers</h2></div>
+
+
+
+
+<table class="rows"><tr><th>Tax saved by your deductions</th><td>How much <b>less tax</b> you'll pay because of your work claims. It's not a refund: apps don't take tax out of your pay, so you'll usually still owe some.</td></tr><tr><th>Income / Deductions / Net</th><td>What you earned, what you can claim, and roughly your profit.</td></tr><tr><th>Put aside about $… a week</th><td>Save this much each week so the tax bill in July isn't a shock.</td></tr></table>
+<div class="shots one"><figure><img src="start/en/7-home.webp" alt="Your year at a glance" loading="lazy" width="540" height="1169"><figcaption>Your year at a glance</figcaption></figure></div>
+
+<div class="note tip">💡 Tap any <b>ⓘ</b> icon for a quick explanation.</div>
+</section>
+<section class="card step" id="export">
+<div class="sh"><span class="num">8</span><h2>At tax time: export</h2></div>
+
+
+
+<ol class="steps"><li><span>After 30 June, open the <b>Export</b> tab.</span></li><li><span>Download your <b>shifts</b>, <b>expenses</b> and <b>summary</b>. They open in Excel or Google Sheets.</span></li><li><span>Send them to your tax agent, or use the totals in myTax.</span></li></ol>
+
+<div class="shots one"><figure><img src="start/en/8-export.webp" alt="Everything your accountant needs" loading="lazy" width="540" height="1169"><figcaption>Everything your accountant needs</figcaption></figure></div>
+
+<div class="note tip">💡 Exports come with <b>yearly Pro</b>, or buy a one-off <b>Tax Pack</b> (A$14.99) for just one year. Both are work costs you can claim.</div>
+</section>
+<div class="card"><h2>Need help?</h2><ul class="need"><li><b>Full guide:</b> Settings → <b>How to use Odo</b>, or the <a href="guide.html">online guide</a>.</li><li><b>Questions?</b> Settings → <b>Help &amp; support</b>. If you're signed in, we reply right there in the app.</li></ul></div>
+<p class="sub" style="text-align:center">Odo is a record-keeping tool, not tax advice. Check current rules at ato.gov.au or with a registered tax agent. · Updated 17 November 2026</p>
+<footer><a href="./">Odo</a> · <a href="start.html">Start here</a> · <a href="guide.html">User guide</a> · <a href="terms.html">Terms of use</a> · <a href="privacy.html">Privacy policy</a></footer>
+</div>
+<script>
+(function(){var c=window.ODO_CONFIG||{};
+/* optional bits (like the ABN) simply disappear when not filled in */
+document.querySelectorAll("[data-optional]").forEach(function(el){if(!c[el.getAttribute("data-optional")])el.remove();});
+var L={BUSINESS_NAME:"[your business name]",ABN:"[your ABN]",SUPPORT_EMAIL:"[your support email]",BUSINESS_STATE:"[state]",PRIVACY_UPDATED:"[date]"};
+document.querySelectorAll("[data-cfg]").forEach(function(el){var k=el.getAttribute("data-cfg"),v=c[k];
+if(!v){el.textContent=L[k]||"["+k+"]";el.className="missing";return;}
+if(el.hasAttribute("data-mailto")){var a=document.createElement("a");a.href="mailto:"+v;a.textContent=v;el.replaceWith(a);}else el.textContent=v;});})();
+</script>
+</body>
+</html>

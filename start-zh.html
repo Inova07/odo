@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>新手入门 · Odo</title>
+<meta name="description" content="第一次用 Odo？5 分钟搞定：打开链接、添加到主屏幕、注册免费账户，然后记录第一个班次。" />
+<meta name="theme-color" content="#141A2E" />
+<link rel="icon" type="image/png" href="favicon-32.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<script src="odo-config.js"></script>
+<style>:root{--bg:#0B0D10;--surface:#14171C;--ink:#F3F4F6;--soft:#9BA3AF;--line:#252A31;--amber:#C6F432;--amberSoft:rgba(198,244,50,.14);--goSoft:rgba(45,212,191,.14);--grad:linear-gradient(135deg,#C6F432,#2DD4BF);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Arimo,Arial,Helvetica,"Noto Sans Devanagari","PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.logo{font-weight:800;font-size:26px;letter-spacing:-.5px;color:var(--ink);text-decoration:none;display:inline-flex;align-items:baseline;gap:2px}
+.logo i{width:16px;height:16px;border-radius:4px;background:var(--grad);display:inline-block;position:relative;top:1px;margin-left:1px}
+.btn{background:var(--grad);color:#0B0D10;text-decoration:none;font-weight:800;font-size:14px;padding:10px 14px;border-radius:6px;white-space:nowrap}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px;letter-spacing:-.5px}
+.sub{color:var(--soft);margin:0 0 20px;font-size:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px 22px;margin-bottom:12px}
+h2{font-size:19px;margin:0 0 10px;scroll-margin-top:16px}
+h3{font-size:15.5px;margin:16px 0 6px}
+p,li{font-size:15px}
+p{margin:0 0 10px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin-bottom:5px}
+a{color:var(--amber)}
+.toc{columns:2;column-gap:24px;padding-left:20px}
+.toc li{break-inside:avoid}
+.note{border-radius:6px;padding:10px 14px;margin:0 0 12px;font-size:14px}
+.note.tip{background:var(--goSoft)} .note.warn{background:var(--amberSoft)}
+ol.steps{list-style:none;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;display:flex;gap:10px}
+ol.steps li:before{content:counter(s);flex:0 0 22px;height:22px;border-radius:50%;background:#262C35;color:var(--amber);font:700 12px/22px Arimo,Arial,sans-serif;text-align:center;margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 12px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--soft)}
+.missing{background:#4A1D1D;color:#FFB4B0;border-radius:4px;padding:0 4px}
+footer{color:var(--soft);font-size:13px;text-align:center;margin-top:24px}
+@media (max-width:560px){.toc{columns:1}h1{font-size:25px}.card{padding:18px}table{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="./">Od<i></i></a><a class="btn" href="./">打开 Odo</a></header>
+<style>
+.hero-s{background:var(--grad);color:#0B0D10;border-radius:6px;padding:22px 20px;margin:4px 0 14px}
+.hero-s h1{color:#0B0D10;margin:0 0 8px;font-size:26px;line-height:1.25}
+.hero-s p{margin:0 0 10px;color:rgba(11,13,16,.85)}.hero-s b{color:#0B0D10}
+.hero-s .btn{background:#0B0D10;color:#C6F432;display:inline-block}
+.need{margin:0;padding-left:20px}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.jump a{font-size:13px;text-decoration:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:4px;padding:6px 10px}
+.step .sh{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.step .sh h2{margin:0}
+.num{flex:0 0 34px;height:34px;border-radius:6px;background:var(--grad);color:#0B0D10;font-weight:800;font-size:17px;display:grid;place-items:center}
+.btn.big{display:inline-block;font-size:16px;padding:12px 18px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 12px}
+.shots.one{grid-template-columns:minmax(0,260px);justify-content:center}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line);background:#000}
+.shots figcaption{font-size:13px;color:var(--soft);text-align:center;margin-top:6px;line-height:1.35}
+.plats{display:grid;gap:12px;margin:10px 0}
+.plat{border:1px solid var(--line);border-radius:6px;padding:12px 14px;background:rgba(255,255,255,.02)}
+.plat .ph{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.plat .ico{width:34px;height:34px;border-radius:6px;background:#262C35;color:var(--amber);display:grid;place-items:center;flex:0 0 34px}
+.pro{border:1px solid rgba(198,244,50,.45);background:rgba(198,244,50,.06);border-radius:6px;padding:14px 16px;margin:12px 0}
+.pro h3{margin:0 0 6px;font-size:16px;display:flex;align-items:center;gap:8px}
+.pro .tag{background:var(--grad);color:#0B0D10;font-size:11px;font-weight:800;border-radius:4px;padding:2px 7px}
+.pro p{margin:0 0 10px}
+table.rows{width:100%;border-collapse:collapse;margin:8px 0;font-size:14px}
+table.rows th,table.rows td{text-align:left;vertical-align:top;padding:9px 6px;border-top:1px solid var(--line)}
+table.rows th{width:38%;color:var(--ink);font-weight:700;text-transform:none;letter-spacing:0;font-size:14px}
+table.rows td{color:var(--soft)}
+@media (min-width:640px){.plats{grid-template-columns:1fr 1fr 1fr}.shots{grid-template-columns:repeat(4,1fr)}.shots.one{grid-template-columns:minmax(0,240px)}}
+</style>
+<nav class="langs" style="display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px;margin:4px 0 14px"><a href="start.html" hreflang="en-AU">English</a><b>中文</b><a href="start-hi.html" hreflang="hi">हिन्दी</a><a href="start-ne.html" hreflang="ne">नेपाली</a><a href="start-es.html" hreflang="es">Español</a><a href="start-pt.html" hreflang="pt-BR">Português</a><a href="start-vi.html" hreflang="vi">Tiếng Việt</a><a href="start-id.html" hreflang="id">Bahasa Indonesia</a></nav>
+<div class="hero-s"><h1>新手入门：8 步学会用 Odo</h1><p>Odo 帮你记录外卖和网约车班次、工作行驶的公里数和工作开支。报税时，它会给你会计师或 myTax 需要的一切。设置只需大约 <b>5 分钟</b>。</p><p><a class="btn" href="./">打开 Odo →</a></p></div>
+<div class="card"><h2>你需要准备</h2><ul class="need"><li>一部能上网的手机（iPhone 或安卓）</li><li>一个电子邮箱</li><li>你的车的里程表读数（仪表盘上的公里数）</li></ul><p style="margin-top:10px">不需要去 App Store 或 Google Play 下载。Odo 通过链接打开，之后像普通 App 一样放在主屏幕上。可以 <b>免费</b> 使用。</p></div>
+<nav class="jump" aria-label="步骤"><a href="#open">1. 打开 Odo 链接</a><a href="#home">2. 把 Odo 添加到主屏幕</a><a href="#account">3. 注册免费账户</a><a href="#setup">4. 告诉 Odo 你的情况（1 分钟）</a><a href="#shift">5. 记录每一个班次</a><a href="#expense">6. 添加工作开支</a><a href="#numbers">7. 看懂你的数字</a><a href="#export">8. 报税时：导出</a></nav>
+<section class="card step" id="open">
+<div class="sh"><span class="num">1</span><h2>打开 Odo 链接</h2></div>
+<p>在手机上打开 <b>inova07.github.io/odo</b>。</p><p><b>iPhone：</b> 用 <b>Safari</b>（蓝色指南针图标）。<b>安卓：</b> 用 <b>Chrome</b> 或 <b>三星浏览器（Samsung Internet）</b>。</p><p>会出现一个简短的欢迎导览。先选择你的 <b>语言</b>，然后点 <b>开始导览</b> 或 <b>跳过</b>。</p>
+<p><a class="btn big" href="./">打开 Odo →</a></p>
+
+
+
+<div class="shots one"><figure><img src="start/zh/1-welcome.webp" alt="在第一个页面选择语言" loading="lazy" width="540" height="1169"><figcaption>在第一个页面选择语言</figcaption></figure></div>
+
+
+</section>
+<section class="card step" id="home">
+<div class="sh"><span class="num">2</span><h2>把 Odo 添加到主屏幕</h2></div>
+<p>只需做一次。之后点一下就能全屏打开 Odo，没有信号也能用。</p>
+
+<div class="plats"><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg></span><b>iPhone（Safari）</b></div><ol class="steps"><li><span>点屏幕底部的 <b>分享</b> 按钮（一个带向上箭头的方框）。</span></li><li><span>向下滑，点 <b>添加到主屏幕</b>。</span></li><li><span>点右上角的 <b>添加</b>。</span></li><li><span>以后就从主屏幕上新的 <b>Od</b> 图标打开 Odo。</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg></span><b>安卓（Chrome）</b></div><ol class="steps"><li><span>点右上角的 <b>⋮</b> 菜单（三个点）。</span></li><li><span>点 <b>安装应用</b> 或 <b>添加到主屏幕</b>。</span></li><li><span>点 <b>安装</b> 或 <b>添加</b>。</span></li><li><span>从主屏幕上的新图标打开 Odo。</span></li></ol></div><div class="plat"><div class="ph"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span><b>安卓（三星浏览器）</b></div><ol class="steps"><li><span>点右下角的 <b>≡</b> 菜单（三条横线）。</span></li><li><span>点 <b>添加页面至</b>，再点 <b>主屏幕</b>。</span></li><li><span>点 <b>添加</b>。</span></li><li><span>地址栏里有小小的 <b>安装</b> 图标？点它也一样。</span></li></ol></div></div>
+
+
+
+
+<div class="note tip">💡 <b>找不到按钮？</b> 那就把 Odo 加入书签。<b>iPhone：</b> 分享 → <b>添加书签</b>。<b>Chrome：</b> ⋮ → 点 <b>星形图标</b>。<b>三星浏览器：</b> ≡ → <b>添加页面至</b> → <b>书签</b>。</div>
+</section>
+<section class="card step" id="account">
+<div class="sh"><span class="num">3</span><h2>注册免费账户</h2></div>
+<p>没有账户时，你的记录只保存在这部手机上。注册后，Odo 会自动备份所有内容，换新手机登录就能全部找回。</p>
+
+
+<ol class="steps"><li><span>点右上角的 <b>人像图标</b>。</span></li><li><span>点 <b>新账户</b>。</span></li><li><span>输入你的 <b>邮箱</b>，设置一个 <b>密码</b>（至少 6 个字符）。</span></li><li><span>点 <b>创建账户</b>。如果 Odo 提示确认，打开 Odo 发来的邮件点链接确认，然后登录。</span></li></ol>
+
+<div class="shots"><figure><img src="start/zh/3a-account-icon.webp" alt="1. 点人像图标" loading="lazy" width="540" height="1169"><figcaption>1. 点人像图标</figcaption></figure><figure><img src="start/zh/3b-new-account.webp" alt="2. 新账户 → 创建账户" loading="lazy" width="540" height="1169"><figcaption>2. 新账户 → 创建账户</figcaption></figure></div>
+
+<div class="note tip">💡 <b>换了新手机？</b> 打开链接，点人像图标，选 <b>登录</b>，用同样的邮箱和密码。记录会全部回来。人像图标上的 <b>绿点</b> 表示已经备份。</div>
+</section>
+<section class="card step" id="setup">
+<div class="sh"><span class="num">4</span><h2>告诉 Odo 你的情况（1 分钟）</h2></div>
+
+
+
+<ol class="steps"><li><span>点右上角的 <b>齿轮图标</b>，打开 <b>设置</b>。</span></li><li><span><b>你的车辆：</b> 选择汽车、摩托车或自行车。</span></li><li><span><b>地区：</b> 保持 <b>澳大利亚</b> 不变。</span></li><li><span><b>今年预计总收入：</b> 大概估计今年所有收入，包括其他工作。Odo 用它来算出你的税率。</span></li><li><span>点底部的 <b>保存设置</b>。</span></li></ol>
+
+<div class="shots"><figure><img src="start/zh/4a-gear.webp" alt="1. 点齿轮图标" loading="lazy" width="540" height="1169"><figcaption>1. 点齿轮图标</figcaption></figure><figure><img src="start/zh/4b-income.webp" alt="2. 填写预计收入" loading="lazy" width="540" height="1169"><figcaption>2. 填写预计收入</figcaption></figure></div>
+
+<div class="note tip">💡 <b>骑自行车或摩托车？</b> Odo 会切换到 <b>骑手模式</b>。按公里计算的标准只适用于汽车，所以你的抵扣来自实际开支：手机、维修、电池、外卖包和装备。</div>
+</section>
+<section class="card step" id="shift">
+<div class="sh"><span class="num">5</span><h2>记录每一个班次</h2></div>
+<p>公里数通常是你最大的报税抵扣。每个班次只需点两下。</p>
+
+
+<ol class="steps"><li><span><b>开始工作：</b> 点 <b>开始班次</b>，选择平台（Uber、DoorDash…），输入 <b>里程表</b> 读数，点 <b>开工</b>。可以关掉 Odo，计时会继续。</span></li><li><span><b>收工：</b> 点 <b>结束班次</b>，输入新的里程表读数和 <b>收入</b>，然后点 <b>保存班次</b>。</span></li></ol>
+
+<div class="shots"><figure><img src="start/zh/5a-start-button.webp" alt="1. 点开始班次" loading="lazy" width="540" height="1169"><figcaption>1. 点开始班次</figcaption></figure><figure><img src="start/zh/5b-clock-on.webp" alt="2. 里程表 → 开工" loading="lazy" width="540" height="1169"><figcaption>2. 里程表 → 开工</figcaption></figure><figure><img src="start/zh/5c-on-shift.webp" alt="3. 收工后：结束班次" loading="lazy" width="540" height="1169"><figcaption>3. 收工后：结束班次</figcaption></figure><figure><img src="start/zh/5d-end-shift.webp" alt="4. 结束读数 + 收入 → 保存" loading="lazy" width="540" height="1169"><figcaption>4. 结束读数 + 收入 → 保存</figcaption></figure></div>
+<div class="pro"><h3><span class="tag">PRO</span>给里程表拍照</h3><p>使用 <b>Odo Pro</b> 时，开始班次时点 <b>拍下开始读数</b> 给里程表拍照，收工时再拍一张 <b>结束</b> 照片。每张照片都带日期和时间，和班次保存在一起，并备份到你的账户。</p><p><b>为什么重要：</b> ATO 可能会要求你说明工作公里数是怎么算出来的，而且报税后记录必须保存 <b>5 年</b>。每个班次开始和结束时的照片是很有力、很难被质疑的证明。就算换手机，也不会丢失或记错读数。报税时，<b>导出 → 下载照片</b> 会把所有照片打包成一个 ZIP 交给你的税务代理。</p><div class="shots one"><figure><img src="start/zh/5e-odo-photo.webp" alt="里程表照片和班次保存在一起" loading="lazy" width="540" height="1169"><figcaption>里程表照片和班次保存在一起</figcaption></figure></div></div>
+<div class="note tip">💡 <b>忘了开始？</b> 在班次页点 <b>+ 班次</b>，事后补录。<b>按周结算？</b> 在班次页点 <b>+ 整周</b>，抄下每周对账单上的总额。只有 <b>工作</b> 公里才算：从家到第一单的路程可能不算。</div>
+</section>
+<section class="card step" id="expense">
+<div class="sh"><span class="num">6</span><h2>添加工作开支</h2></div>
+
+
+
+<ol class="steps"><li><span>进入 <b>支出</b> 页，点 <b>添加支出</b>。</span></li><li><span>选择 <b>类别</b>（例如手机和网络），输入 <b>金额</b>。</span></li><li><span>拖动 <b>工作用途</b> 滑块，设置有多少用于工作。手机 70% 用来送单？就设为 <b>70%</b>。</span></li><li><span>点 <b>保存</b>。</span></li></ol>
+
+<div class="shots one"><figure><img src="start/zh/6-expense.webp" alt="设置工作用途比例" loading="lazy" width="540" height="1169"><figcaption>设置工作用途比例</figcaption></figure></div>
+
+<div class="note warn">⚠️ <b>开汽车的话，不要添加油费、注册费（rego）、保险或保养。</b> ATO 每公里费率（2026–27 年度为每公里 91 澳分）已经包含这些。停车费和过路费可以添加。</div>
+</section>
+<section class="card step" id="numbers">
+<div class="sh"><span class="num">7</span><h2>看懂你的数字</h2></div>
+
+
+
+
+<table class="rows"><tr><th>抵扣为你省下的税</th><td>因为工作抵扣，你可以 <b>少交多少税</b>。这不是退税：App 不会从你的收入里扣税，所以你通常还是要交一些税。</td></tr><tr><th>收入 / 抵扣 / 净收入</th><td>你赚了多少、可以抵扣多少，以及大概的利润。</td></tr><tr><th>每周建议预留约 $…</th><td>每周存下这么多，7 月的税单就不会吓你一跳。</td></tr></table>
+<div class="shots one"><figure><img src="start/zh/7-home.webp" alt="全年情况一目了然" loading="lazy" width="540" height="1169"><figcaption>全年情况一目了然</figcaption></figure></div>
+
+<div class="note tip">💡 点任意 <b>ⓘ</b> 图标可以看到简单解释。</div>
+</section>
+<section class="card step" id="export">
+<div class="sh"><span class="num">8</span><h2>报税时：导出</h2></div>
+
+
+
+<ol class="steps"><li><span>6 月 30 日之后，打开 <b>导出</b> 页。</span></li><li><span>下载你的 <b>班次</b>、<b>支出</b> 和 <b>汇总</b>。可以用 Excel 或 Google Sheets 打开。</span></li><li><span>发给你的税务代理，或者在 myTax 里填写这些总数。</span></li></ol>
+
+<div class="shots one"><figure><img src="start/zh/8-export.webp" alt="会计师需要的都在这里" loading="lazy" width="540" height="1169"><figcaption>会计师需要的都在这里</figcaption></figure></div>
+
+<div class="note tip">💡 <b>年付 Pro</b> 包含导出功能，也可以单独购买某一年的 <b>报税包</b>（A$14.99）。两者都可以作为工作开支抵扣。</div>
+</section>
+<div class="card"><h2>需要帮助？</h2><ul class="need"><li><b>完整指南：</b> 设置 → <b>Odo 使用指南</b>，或查看 <a href="guide-zh.html">在线指南</a>。</li><li><b>有问题？</b> 设置 → <b>帮助与支持</b>。如果你已登录，我们会直接在 App 里回复。</li></ul></div>
+<p class="sub" style="text-align:center">Odo 是记录工具，不是税务建议。请在 ato.gov.au 或向注册税务代理确认最新规定。 · 更新于 2026年11月17日</p>
+<footer><a href="./">Odo</a> · <a href="start-zh.html">新手入门</a> · <a href="guide-zh.html">使用指南</a> · <a href="terms.html">使用条款</a> · <a href="privacy.html">隐私政策</a></footer>
+</div>
+<script>
+(function(){var c=window.ODO_CONFIG||{};
+/* optional bits (like the ABN) simply disappear when not filled in */
+document.querySelectorAll("[data-optional]").forEach(function(el){if(!c[el.getAttribute("data-optional")])el.remove();});
+var L={BUSINESS_NAME:"[your business name]",ABN:"[your ABN]",SUPPORT_EMAIL:"[your support email]",BUSINESS_STATE:"[state]",PRIVACY_UPDATED:"[date]"};
+document.querySelectorAll("[data-cfg]").forEach(function(el){var k=el.getAttribute("data-cfg"),v=c[k];
+if(!v){el.textContent=L[k]||"["+k+"]";el.className="missing";return;}
+if(el.hasAttribute("data-mailto")){var a=document.createElement("a");a.href="mailto:"+v;a.textContent=v;el.replaceWith(a);}else el.textContent=v;});})();
+</script>
+</body>
+</html>
