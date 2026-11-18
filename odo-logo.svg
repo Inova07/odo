@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 140" role="img" aria-label="Odo"><defs><linearGradient id="g" x1="0" y1="0" x2="360" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C6F432"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient></defs>
+<path d="M30.3 109.7 A42 42 0 1 1 89.7 109.7" fill="none" stroke="url(#g)" stroke-width="22" stroke-linecap="round"/>
+<line x1="60" y1="80" x2="80" y2="63" stroke="#F3F4F6" stroke-width="9" stroke-linecap="round"/><circle cx="60" cy="80" r="9" fill="#F3F4F6"/>
+<circle cx="180" cy="80" r="42" fill="none" stroke="url(#g)" stroke-width="22"/><rect x="211" y="0" width="22" height="133" rx="11" fill="url(#g)"/>
+<circle cx="300" cy="80" r="42" fill="none" stroke="url(#g)" stroke-width="22"/>
+</svg>
