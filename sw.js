@@ -1,7 +1,7 @@
 // Network-first: always try for the latest version, fall back to cache when offline.
 // Pages and config are re-checked with the server on every load ("no-cache"), so a new
 // upload shows up on the next open instead of waiting for GitHub's 10-minute cache.
-const CACHE = "odo-v16";
+const CACHE = "odo-v17";
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (e) => e.waitUntil(
   caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim())
